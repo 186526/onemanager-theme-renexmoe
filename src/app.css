@@ -1,0 +1,36 @@
+.mdui-drawer-close {
+    display: none;
+}
+
+.mdui-drawer .mdui-list-item {
+    padding-left: 20px;
+    border-radius: 0 50px 50px 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.mdui-chip {
+    margin: 20px;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+    font-family: "Montserrat";
+    margin-top: 0.2em;
+}
+
+@media (max-width: 600px) {
+    .mdui-col-sm-2,
+    .mdui-col-sm-3 {
+        display: none;
+    }
+    .forcedownload {
+        float: right;
+    }
+}
