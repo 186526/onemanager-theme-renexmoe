@@ -1,0 +1,30 @@
+{
+  "name": "onemanager-theme-renexmoe",
+  "version": "1.0.0",
+  "description": "A light Theme for Onemanger-php",
+  "main": "index.html",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "http-server": "^0.12.3"
+  },
+  "scripts": {
+    "test": "http-server",
+    "build": "babel src/app.js -o dist/app.prod.js;cp src/app.css dist/app.prod.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/186526/onemanager-theme-renexmoe.git"
+  },
+  "keywords": [
+    "Onemanager-php"
+  ],
+  "author": "186526 <i@186526.xyz>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/186526/onemanager-theme-renexmoe/issues"
+  },
+  "homepage": "https://github.com/186526/onemanager-theme-renexmoe#readme"
+}

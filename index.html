@@ -17,48 +17,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css" integrity="sha384-2PJ2u4NYg6jCNNpv3i1hK9AoAqODy6CdiC+gYiL2DVx+ku5wzJMFNdE3RoWfBIRP" crossorigin="anonymous" />
     <!-- MDUI JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js" integrity="sha384-aB8rnkAu/GBsQ1q6dwTySnlrrbhqDwrDnpVHR2Wgm8pWLbwUnzDcIROX3VvCbaK+" crossorigin="anonymous"></script>
-    <link rel="icon" href="<!--base_path-->favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="<!--base_path-->favicon.ico" type="image/x-icon" />
 </head>
-
-<style>
-    .mdui-drawer-close {
-        display: none;
-    }
-    
-    .mdui-drawer .mdui-list-item {
-        padding-left: 20px;
-        border-radius: 0 50px 50px 0;
-    }
-    
-    footer a {
-        text-decoration: none;
-    }
-    
-    .mdui-chip {
-        margin: 20px;
-    }
-    
-    .markdown h1,
-    .markdown h2,
-    .markdown h3,
-    .markdown h4,
-    .markdown h5,
-    .markdown h6 {
-        font-family: "Montserrat";
-        margin-top: 0.2em;
-    }
-    
-    @media (max-width: 600px) {
-        .mdui-col-sm-2,
-        .mdui-col-sm-3 {
-            display: none;
-        }
-        .forcedownload {
-            float: right;
-        }
-    }
-</style>
 
 <body id="app" class="mdui-appbar-with-toolbar mdui-theme-layout-auto mdui-loaded">
     <!-- appbar && toolbar -->
@@ -108,6 +68,10 @@
                 <a class="mdui-list-item-icon mdui-icon material-icons" href="?setup">account_circle</a>
                 <a class="mdui-list-item-content" href="?setup">管理</a>
             </li>
+            <li class="mdui-list-item mdui-ripple" onclick='docCookies.removeItem("admin","/");window.location.reload();'>
+                <i class="mdui-icon material-icons mdui-list-item-icon">exit_to_app</i>
+                <div class="mdui-list-item-content">退出登陆</div>
+            </li>
             <!--AdminEnd-->
             <div class="mdui-divider"></div>
             <li class="mdui-list-item mdui-ripple" href="javascript:void(0);" onclick="changecolor();">
@@ -130,13 +94,12 @@
                 </div>
             </a>
             <!--MultiDisksEnd-->
-            <div class="mdui-divider"></div>
+            <div class="mdui-divider mdui-hidden-sm-up"></div>
             <!--MultiDiskAreaEnd-->
             <a href="https://github.com/qkqpttgf/OneManager-php" class="mdui-list-item mdui-ripple mdui-hidden-sm-up">
                 <i class="mdui-list-item-icon mdui-icon material-icons">code</i>
                 <div class="mdui-list-item-content">Github</div>
             </a>
-            <div style="width: auto;height: auto;"></div>
         </div>
     </div>
 
@@ -148,7 +111,7 @@
                 <div class="mdui-textfield mdui-textfield-floating-label">
                     <i class="mdui-icon material-icons">lock</i>
                     <label class="mdui-textfield-label">密码</label>
-                    <input class="mdui-textfield-input" type="password" />
+                    <input class="mdui-textfield-input" name="password1" type="password" />
                 </div>
             </div>
             <div class="mdui-dialog-actions">
@@ -199,9 +162,6 @@
         <div class="mdui-typo mdui-shadow-3 markdown" style="padding: 20px;margin: 20px 0" id="head">
             <textarea id="head-md"><!--HeadmdContent--></textarea>
         </div>
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-        </style>
         <!--HeadmdEnd-->
 
         <!-- row start-->
@@ -381,12 +341,12 @@
                 docCookies.setItem("darkmod", false, 1200, "/")
             } else {
                 $("#app").addClass("mdui-theme-layout-dark", "/");
-                docCookies.setItem("darkmod", true, 1200);
+                docCookies.setItem("darkmod", true, 1200, "/");
             }
         })
     };
 
-    function geturl(b) {
+    async function geturl(b) {
         try {
             new URL(b);
         } catch (error) {
@@ -399,48 +359,154 @@
         if (new URL(b).search === "?preview") {
             return host + new URL(b).pathname + "?preview";
         }
-        let a = "/";
+        let a = await "/";
         for (let i of new URL(b).pathname.split("/").slice(1, -1)) {
             a = a + i + "/";
         }
         return host + a;
     }
 
-    function getpreload() {
+    $.fn.extend({
+        sortElements: function(comparator, getSortable) {
+            getSortable = getSortable || function() {
+                return this;
+            };
+            var placements = this.map(function() {
+                var sortElement = getSortable.call(this),
+                    parentNode = sortElement.parentNode,
+                    nextSibling = parentNode.insertBefore(
+                        document.createTextNode(''),
+                        sortElement.nextSibling
+                    );
+                return function() {
+                    parentNode.insertBefore(this, nextSibling);
+                    parentNode.removeChild(nextSibling);
+                };
+            });
+            return [].sort.call(this, comparator).each(function(i) {
+                placements[i].call(getSortable.call(this));
+            });
+        }
+    });
+
+    async function getpreload() {
         let includeKeywords = [];
-        let a = document.getElementsByTagName("a");
+        let a = await document.getElementsByTagName("a");
         for (let i in a) {
-            includeKeywords.push(geturl(a[i].href))
+            includeKeywords.push(await geturl(a[i].href))
         }
         return $.unique(includeKeywords).filter(Boolean);
     }
 
-    {
-        let a = getpreload();
-        for (let i in a) {
-            const link = document.createElement(`link`);
-            link.rel = `prefetch`;
-            link.href = a[i];
-            document.head.appendChild(link);
-        }
+    function loadcss(url) {
+        let i = document.createElement("link");
+        i.rel = "stylesheet";
+        i.href = url;
+        $("head").append(i);
+    }
+
+    async function prefetch(url) {
+        const link = document.createElement(`link`);
+        link.rel = `prefetch`;
+        link.href = url;
+        $("head").append(link);
     }
 
     {
         $("#app").addClass("mdui-theme-primary-" + primary_color + " mdui-theme-accent-" + accent_color);
         if (document.getElementById("head")) {
             loadjs("https://cdn.jsdelivr.net/npm/marked@1.2.0/marked.min.js");
+            loadcss("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
             whenAvailable("marked", function() {
                 $('#head').html(marked($('#head-md').html()));
             })
         }
         if (document.getElementById("readme")) {
             loadjs("https://cdn.jsdelivr.net/npm/marked@1.2.0/marked.min.js");
+            loadcss("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
             whenAvailable("marked", function() {
                 $('#readme').html(marked($('#readme-md').html()));
             })
         }
     }
+
+    {
+        $(function() {
+            $('.icon-sort').on('click', function() {
+                let sort_type = $(this).attr("data-sort"),
+                    sort_order = $(this).attr("data-order");
+                let sort_order_to = (sort_order === "less") ? "more" : "less";
+                $('li[data-sort]').sortElements(function(a, b) {
+                    let data_a = $(a).attr("data-sort-" + sort_type),
+                        data_b = $(b).attr("data-sort-" + sort_type);
+                    let rt = data_a.localeCompare(data_b, undefined, {
+                        numeric: true
+                    });
+                    return (sort_order === "more") ? 0 - rt : rt;
+                });
+                $(this).attr("data-order", sort_order_to).text("expand_" + sort_order_to);
+            });
+        });
+    }
+
+    {
+        window.onload = function() {
+            (async function() {
+                let a = await getpreload();
+                for (let i in a) {
+                    prefetch(a[i]);
+                }
+            })();
+        }
+    }
 </script>
+
+
+<style>
+    .mdui-drawer-close {
+        display: none;
+    }
+    
+    .mdui-drawer .mdui-list-item {
+        padding-left: 20px;
+        border-radius: 0 50px 50px 0;
+    }
+    
+    footer a {
+        text-decoration: none;
+    }
+    
+    .mdui-chip {
+        margin: 20px;
+    }
+    
+    .markdown h1,
+    .markdown h2,
+    .markdown h3,
+    .markdown h4,
+    .markdown h5,
+    .markdown h6 {
+        font-family: "Montserrat";
+        margin-top: 0.2em;
+    }
+    
+    @media (max-width: 600px) {
+        .mdui-col-sm-2,
+        .mdui-col-sm-3,
+        .forcedownload {
+            display: none;
+        }
+        .mdui-col-xs-12 {
+            width: 100%;
+        }
+    }
+    
+    .mdui-list-item-icon {
+        color: black;
+    }
+</style>
+
+
 
 <!--IconValuesStart-->
 { "music":"audiotrack", "video":"ondemand_video", "img":"image", "default":"insert_drive_file" }

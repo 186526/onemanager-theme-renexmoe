@@ -1,7 +1,11 @@
+"use strict";
+
 var $ = mdui.$;
 
-function loadjs(url, defer = false) {
-    let i = document.createElement("script");
+function loadjs(url) {
+    var defer = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+    var i = document.createElement("script");
     i.src = url;
     i.defer = defer;
     $("head").append(i);
@@ -58,29 +62,48 @@ async function geturl(b) {
     if (new URL(b).host !== window.location.host) {
         return;
     }
-    let host = window.location.protocol + "//" + window.location.host;
+    var host = window.location.protocol + "//" + window.location.host;
     if (new URL(b).search === "?preview") {
         return host + new URL(b).pathname + "?preview";
     }
-    let a = await "/";
-    for (let i of new URL(b).pathname.split("/").slice(1, -1)) {
-        a = a + i + "/";
+    var a = await "/";
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+        for (var _iterator = new URL(b).pathname.split("/").slice(1, -1)[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+            var i = _step.value;
+
+            a = a + i + "/";
+        }
+    } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+    } finally {
+        try {
+            if (!_iteratorNormalCompletion && _iterator.return) {
+                _iterator.return();
+            }
+        } finally {
+            if (_didIteratorError) {
+                throw _iteratorError;
+            }
+        }
     }
+
     return host + a;
 }
 
 $.fn.extend({
-    sortElements: function (comparator, getSortable) {
+    sortElements: function sortElements(comparator, getSortable) {
         getSortable = getSortable || function () {
             return this;
         };
         var placements = this.map(function () {
             var sortElement = getSortable.call(this),
                 parentNode = sortElement.parentNode,
-                nextSibling = parentNode.insertBefore(
-                    document.createTextNode(''),
-                    sortElement.nextSibling
-                );
+                nextSibling = parentNode.insertBefore(document.createTextNode(''), sortElement.nextSibling);
             return function () {
                 parentNode.insertBefore(this, nextSibling);
                 parentNode.removeChild(nextSibling);
@@ -93,24 +116,24 @@ $.fn.extend({
 });
 
 async function getpreload() {
-    let includeKeywords = [];
-    let a = await document.getElementsByTagName("a");
-    for (let i in a) {
-        includeKeywords.push(await geturl(a[i].href));
+    var includeKeywords = [];
+    var a = await document.getElementsByTagName("a");
+    for (var i in a) {
+        includeKeywords.push((await geturl(a[i].href)));
     }
     return $.unique(includeKeywords).filter(Boolean);
 }
 
 function loadcss(url) {
-    let i = document.createElement("link");
+    var i = document.createElement("link");
     i.rel = "stylesheet";
     i.href = url;
     $("head").append(i);
 }
 
 async function prefetch(url) {
-    const link = document.createElement(`link`);
-    link.rel = `prefetch`;
+    var link = document.createElement("link");
+    link.rel = "prefetch";
     link.href = url;
     $("head").append(link);
 }
@@ -136,16 +159,16 @@ async function prefetch(url) {
 {
     $(function () {
         $('.icon-sort').on('click', function () {
-            let sort_type = $(this).attr("data-sort"),
+            var sort_type = $(this).attr("data-sort"),
                 sort_order = $(this).attr("data-order");
-            let sort_order_to = (sort_order === "less") ? "more" : "less";
+            var sort_order_to = sort_order === "less" ? "more" : "less";
             $('li[data-sort]').sortElements(function (a, b) {
-                let data_a = $(a).attr("data-sort-" + sort_type),
+                var data_a = $(a).attr("data-sort-" + sort_type),
                     data_b = $(b).attr("data-sort-" + sort_type);
-                let rt = data_a.localeCompare(data_b, undefined, {
+                var rt = data_a.localeCompare(data_b, undefined, {
                     numeric: true
                 });
-                return (sort_order === "more") ? 0 - rt : rt;
+                return sort_order === "more" ? 0 - rt : rt;
             });
             $(this).attr("data-order", sort_order_to).text("expand_" + sort_order_to);
         });
@@ -155,8 +178,8 @@ async function prefetch(url) {
 {
     window.onload = function () {
         (async function () {
-            let a = await getpreload();
-            for (let i in a) {
+            var a = await getpreload();
+            for (var i in a) {
                 prefetch(a[i]);
             }
         })();
