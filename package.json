@@ -1,0 +1,34 @@
+{
+  "name": "onemanager-theme-renexmoe",
+  "version": "1.0.0",
+  "description": "A Material Design Theme For Onemanager-php",
+  "main": "src/js/app.js",
+  "scripts": {
+    "format": "prettier --write \"*[^build]/**/*[^prod][^bundle].@(css|js|html|json)\"",
+    "clean": "rm -rf ./dist/ ./build/",
+    "dev": "snowpack dev",
+    "build": "npm clean;npm build:html;snowpack build",
+    "build:html": "gulp html"
+  },
+  "keywords": [
+    "Material Design",
+    "Onemanager-php",
+    "MDUI",
+    "renexmoe"
+  ],
+  "author": "186526 <i@186526.xyz>",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.2.2",
+    "mdui": "^1.0.1",
+    "pdfjs-dist": "^2.5.207",
+    "pjax": "^0.2.8"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-webpack": "^2.1.3",
+    "prettier": "^2.2.1",
+    "snowpack": "^2.18.2"
+  }
+}
