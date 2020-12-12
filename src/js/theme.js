@@ -4,7 +4,7 @@ const $ = mdui.$;
 const func = {
     mutation: () => {
         if (window.disableddarkmode) {
-            $('li[onclick^=changecolor]').remove();
+            mdui.$('li[onclick^=renexmoe]').remove();
             cookies.setItem("darkmode", false, 1200, "/");
             return;
         }

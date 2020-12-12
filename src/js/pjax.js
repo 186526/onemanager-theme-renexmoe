@@ -1,4 +1,12 @@
+import "nprogress/nprogress.css";
 import Pjax from "pjax";
+import nprogress from "nprogress";
+const whenpjax = () => {
+  nprogress.inc();
+};
+const whensuccess = () => {
+  nprogress.done();
+};
 export default () => {
   let pjax = new Pjax({
     elements: "a:not([target=_blank])",
@@ -21,5 +29,7 @@ export default () => {
       pjax._handleResponse(responseText, request, href, options);
     }
   };
+  document.addEventListener("pjax:send", whenpjax);
+  document.addEventListener("pjax:success", whensuccess);
   return pjax;
 };
