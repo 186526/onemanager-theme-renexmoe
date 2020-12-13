@@ -3,6 +3,7 @@ import cookies from './cookies.js';
 const $ = mdui.$;
 const func = {
     mutation: () => {
+        $("body").removeClass("mdui-theme-layout-auto");
         if (window.disableddarkmode) {
             mdui.$('li[onclick^=renexmoe]').remove();
             cookies.setItem("darkmode", false, 1200, "/");
@@ -17,11 +18,12 @@ const func = {
                 $("body").removeClass("mdui-theme-layout-dark");
             }
         }
-        if (eval(cookies.getItem("darkmod"))) {
+        if (eval(cookies.getItem("darkmode"))) {
             $("body").addClass("mdui-theme-layout-dark");
         } else {
             $("body").removeClass("mdui-theme-layout-dark");
         }
+        return;
     },
     toggle: () => {
         if (eval(cookies.getItem("darkmode"))) {
