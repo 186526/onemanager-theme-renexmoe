@@ -17,7 +17,11 @@ const func = {
                 $("body").removeClass("mdui-theme-layout-dark");
             }
         }
-        func.toggle();
+        if (eval(cookies.getItem("darkmod"))) {
+            $("body").addClass("mdui-theme-layout-dark");
+        } else {
+            $("body").removeClass("mdui-theme-layout-dark");
+        }
     },
     toggle: () => {
         if (eval(cookies.getItem("darkmode"))) {

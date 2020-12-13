@@ -6,12 +6,21 @@ module.exports = {
         "src/css": "/renexmoe_assets/css"
     },
     plugins: [
+        ["@snowpack/plugin-optimize", {
+            minifyJS: true,
+            minifyCSS: true,
+            minifyHTML: false,
+            preloadModules: false,
+            preloadCSS: true,
+            preloadCSSFileName: "css/app.css",
+            //target: ["chrome49"]
+        }],
         [
             '@snowpack/plugin-webpack',
             {
                 sourceMap: true,
                 htmlMinifierOptions: false,
-                manifest:true,
+                manifest: true,
             },
         ],
     ],

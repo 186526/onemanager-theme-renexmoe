@@ -21,11 +21,9 @@ export default () => {
   });
   pjax._handleResponse = pjax.handleResponse;
   pjax.handleResponse = function (responseText, request, href, options) {
-    if (request.status === 401) {
+    if (request.status !== 200) {
       location.href = href;
-    } else if (request.status === 302) {
-      location.href = href;
-    } else {
+    }else {
       pjax._handleResponse(responseText, request, href, options);
     }
   };

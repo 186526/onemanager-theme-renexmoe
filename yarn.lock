@@ -899,6 +899,22 @@
     execa "^4.0.3"
     npm-run-path "^4.0.1"
 
+"@snowpack/plugin-optimize@^0.2.10":
+  version "0.2.10"
+  resolved "https://registry.npm.taobao.org/@snowpack/plugin-optimize/download/@snowpack/plugin-optimize-0.2.10.tgz#06472843b6cc4e52611a1e00b06c8b7c68ff9292"
+  integrity sha1-BkcoQ7bMTlJhGh4AsGyLfGj/kpI=
+  dependencies:
+    csso "^4.1.0"
+    es-module-lexer "^0.3.25"
+    esbuild "^0.8.0"
+    glob "^7.1.6"
+    html-minifier "^4.0.0"
+    hypertag "^0.0.3"
+    kleur "^4.1.3"
+    node-inject-html "^0.0.5"
+    object.fromentries "^2.0.2"
+    p-queue "^6.6.1"
+
 "@snowpack/plugin-run-script@^2.2.1":
   version "2.2.1"
   resolved "https://registry.npm.taobao.org/@snowpack/plugin-run-script/download/@snowpack/plugin-run-script-2.2.1.tgz#8a564f84c65c1136b9b898ef5a89552cf473a638"
@@ -1448,13 +1464,6 @@ aws4@^1.8.0:
   version "1.11.0"
   resolved "https://registry.npm.taobao.org/aws4/download/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha1-1h9G2DslGSUOJ4Ta9bCUeai0HFk=
-
-axios@^0.21.0:
-  version "0.21.0"
-  resolved "https://registry.npm.taobao.org/axios/download/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
-  integrity sha1-Jt8IiAOiNQ3/LCf5b++Z/klEKso=
-  dependencies:
-    follow-redirects "^1.10.0"
 
 babel-loader@^8.1.0:
   version "8.2.2"
@@ -2432,7 +2441,7 @@ cssnano@^4.1.10:
     is-resolvable "^1.0.0"
     postcss "^7.0.0"
 
-csso@^4.0.2:
+csso@^4.0.2, csso@^4.1.0:
   version "4.2.0"
   resolved "https://registry.npm.taobao.org/csso/download/csso-4.2.0.tgz#ea3a561346e8dc9f546d6febedd50187cf389529"
   integrity sha1-6jpWE0bo3J9UbW/r7dUBh884lSk=
@@ -2804,7 +2813,7 @@ es-abstract@^1.18.0-next.1:
     string.prototype.trimend "^1.0.1"
     string.prototype.trimstart "^1.0.1"
 
-es-module-lexer@^0.3.24:
+es-module-lexer@^0.3.24, es-module-lexer@^0.3.25:
   version "0.3.26"
   resolved "https://registry.npm.taobao.org/es-module-lexer/download/es-module-lexer-0.3.26.tgz#7b507044e97d5b03b01d4392c74ffeb9c177a83b"
   integrity sha1-e1BwROl9WwOwHUOSx0/+ucF3qDs=
@@ -2854,7 +2863,7 @@ es6-weak-map@^2.0.1:
     es6-iterator "^2.0.3"
     es6-symbol "^3.1.1"
 
-esbuild@^0.8.7:
+esbuild@^0.8.0, esbuild@^0.8.7:
   version "0.8.21"
   resolved "https://registry.npm.taobao.org/esbuild/download/esbuild-0.8.21.tgz?cache=0&sync_timestamp=1607407939097&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fesbuild%2Fdownload%2Fesbuild-0.8.21.tgz#c431f8af457795c2fecb1b2873cb8eaef4e5b53c"
   integrity sha1-xDH4r0V3lcL+yxsoc8uOrvTltTw=
@@ -3225,7 +3234,7 @@ flush-write-stream@^1.0.0, flush-write-stream@^1.0.2:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-follow-redirects@^1.0.0, follow-redirects@^1.10.0:
+follow-redirects@^1.0.0:
   version "1.13.0"
   resolved "https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha1-tC6Nk6Kn7qXtiGM2dtZZe8jjhNs=
@@ -3744,6 +3753,11 @@ human-signals@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/human-signals/download/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
   integrity sha1-xbHNFPUK6uCatsWf5jujOV/k36M=
+
+hypertag@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.npm.taobao.org/hypertag/download/hypertag-0.0.3.tgz#2737f7a4ab885e0bb2b69a3319a11a92b035f96f"
+  integrity sha1-Jzf3pKuIXguytpozGaEakrA1+W8=
 
 iconv-lite@0.4.24:
   version "0.4.24"
@@ -4371,7 +4385,7 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.npm.taobao.org/kind-of/download/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha1-B8BQNKbDSfoG4k+jWqdttFgM5N0=
 
-kleur@^4.1.0, kleur@^4.1.1:
+kleur@^4.1.0, kleur@^4.1.1, kleur@^4.1.3:
   version "4.1.3"
   resolved "https://registry.npm.taobao.org/kleur/download/kleur-4.1.3.tgz?cache=0&sync_timestamp=1601440447826&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fkleur%2Fdownload%2Fkleur-4.1.3.tgz#8d262a56d79a137ee1b706e967c0b08a7fef4f4c"
   integrity sha1-jSYqVteaE37htwbpZ8Cwin/vT0w=
@@ -4826,6 +4840,11 @@ mkdirp@^1.0.3, mkdirp@^1.0.4:
   resolved "https://registry.npm.taobao.org/mkdirp/download/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
   integrity sha1-PrXtYmInVteaXw4qIh3+utdcL34=
 
+moo@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.npm.taobao.org/moo/download/moo-0.5.1.tgz#7aae7f384b9b09f620b6abf6f74ebbcd1b65dbc4"
+  integrity sha1-eq5/OEubCfYgtqv29067zRtl28Q=
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/move-concurrently/download/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -4896,6 +4915,13 @@ no-case@^2.2.0:
   integrity sha1-YLgTOWvjmz8SiKTB7V0efSi0ZKw=
   dependencies:
     lower-case "^1.1.1"
+
+node-inject-html@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npm.taobao.org/node-inject-html/download/node-inject-html-0.0.5.tgz#743ca166d76b623622e94fbd3d6534c4305aa3a5"
+  integrity sha1-dDyhZtdrYjYi6U+9PWU0xDBao6U=
+  dependencies:
+    moo "^0.5.1"
 
 node-libs-browser@^2.2.1:
   version "2.2.1"
@@ -5064,6 +5090,16 @@ object.entries@^1.1.0:
   version "1.1.3"
   resolved "https://registry.npm.taobao.org/object.entries/download/object.entries-1.1.3.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fobject.entries%2Fdownload%2Fobject.entries-1.1.3.tgz#c601c7f168b62374541a07ddbd3e2d5e4f7711a6"
   integrity sha1-xgHH8Wi2I3RUGgfdvT4tXk93EaY=
+  dependencies:
+    call-bind "^1.0.0"
+    define-properties "^1.1.3"
+    es-abstract "^1.18.0-next.1"
+    has "^1.0.3"
+
+object.fromentries@^2.0.2:
+  version "2.0.3"
+  resolved "https://registry.npm.taobao.org/object.fromentries/download/object.fromentries-2.0.3.tgz?cache=0&sync_timestamp=1606458390665&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fobject.fromentries%2Fdownload%2Fobject.fromentries-2.0.3.tgz#13cefcffa702dc67750314a3305e8cb3fad1d072"
+  integrity sha1-E878/6cC3Gd1AxSjMF6Ms/rR0HI=
   dependencies:
     call-bind "^1.0.0"
     define-properties "^1.1.3"
@@ -5423,11 +5459,6 @@ pbkdf2@^3.0.3:
     ripemd160 "^2.0.1"
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
-
-pdfjs-dist@^2.5.207:
-  version "2.5.207"
-  resolved "https://registry.npm.taobao.org/pdfjs-dist/download/pdfjs-dist-2.5.207.tgz#b5e8c19627be64269cd3fb6df3eaaf45ddffe7b6"
-  integrity sha1-tejBlie+ZCac0/tt8+qvRd3/57Y=
 
 performance-now@^2.1.0:
   version "2.1.0"

@@ -1,5 +1,4 @@
 import mdui from "mdui";
-import axios from "axios";
 export default {
   /**
    *
@@ -23,7 +22,7 @@ export default {
 export async function refresh(url) {
   const GetURL = new URL(url);
   GetURL.search = "?RefreshCache";
-  const req = await axios.get(GetURL.href);
+  const req = await fetch(GetURL.href);
   if (req.status === 302) {
     return true;
   } else {
