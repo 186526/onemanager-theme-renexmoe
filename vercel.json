@@ -1,0 +1,12 @@
+{
+    "routes": [
+        {
+            "src": "/",
+            "headers": {
+                "Cache-Control": "s-maxage=1209600, max-age=86400, public",
+                "Content-Type": "text/plain; charset=utf-8"
+            },
+            "continue": true
+        }
+    ]
+}

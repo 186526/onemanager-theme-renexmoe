@@ -3,7 +3,8 @@ module.exports = {
     mount: {
         "src/html_dist": "/",
         "src/js": "/renexmoe_assets/js",
-        "src/css": "/renexmoe_assets/css"
+        "src/css": "/renexmoe_assets/css",
+        //"./package.json":"/renexmoe_assets/package.json",
     },
     plugins: [
         ["@snowpack/plugin-optimize", {

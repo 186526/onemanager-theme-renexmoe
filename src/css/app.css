@@ -34,17 +34,17 @@ footer a {
     margin: 20px
 }
 
-.markdown h1,
-.markdown h2,
-.markdown h3,
-.markdown h4,
-.markdown h5,
-.markdown h6 {
+.mdui-typo h1,
+.mdui-typo h2,
+.mdui-typo h3,
+.mdui-typo h4,
+.mdui-typo h5,
+.mdui-typo h6 {
     font-family: Product Sans, Noto Sans SC;
     margin-top: 0.2em
 }
 
-@media(max-width:600px) {
+@media(max-width:740px) {
 
     .mdui-col-sm-2,
     .mdui-col-sm-3,
@@ -54,6 +54,10 @@ footer a {
 
     .mdui-col-xs-12 {
         width: 100%
+    }
+
+    .mdui-drawer .mdui-list-item {
+        margin-right:5px;
     }
 }
 

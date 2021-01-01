@@ -1,4 +1,5 @@
 import mdui from "mdui";
+import cookies from "./cookies";
 export default {
   /**
    *
@@ -28,4 +29,16 @@ export async function refresh(url) {
   } else {
     return false;
   }
+}
+/**
+ * 
+ *  Logout Onemanager
+ * 
+ *  @param {null} - Nothing to param here
+ *  @return {null} - Nothing Can return here
+ * 
+ */
+export async function logout() {
+  cookies.removeItem("admin","/");
+  location.reload();
 }
