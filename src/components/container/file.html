@@ -1,19 +1,23 @@
 <!--IsFileStart-->
 <div id="file">
-    @@include("./File/img.html")
-    @@include("./File/music.html")
-    @@include("./File/video.html")
-    @@include("./File/office.html")
-    @@include("./File/pdf.html")
-    @@include("./File/txt.html")
-    <!--IsOtherFileStart-->
-    <!--constStr@FileNotSupport-->
-    <!--IsOtherFileEnd-->
-</div><a href="<!--FileEncodeReplaceUrl-->" target="_blank"
-    class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i
-        class="mdui-icon material-icons">file_download</i></a>
+  @@include("./File/img.html") @@include("./File/music.html")
+  @@include("./File/video.html") @@include("./File/office.html")
+  @@include("./File/pdf.html") @@include("./File/txt.html")
+  <!--IsOtherFileStart-->
+  <!--constStr@FileNotSupport-->
+  <!--IsOtherFileEnd-->
+</div>
+<a
+  href="<!--FileEncodeReplaceUrl-->"
+  target="_blank"
+  class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"
+  ><i class="mdui-icon material-icons">file_download</i></a
+>
 <script>
-    document.querySelector("#admin-menu").innerHTML += '<li class="mdui-menu-item"><a href="javascript:void(0);"class="mdui-ripple downloadurl"><i class="mdui-menu-item-icon mdui-icon material-icons">cloud_download</i>下载链接</a></li>';
-    document.querySelector('.mdui-toolbar').innerHTML += `<a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple mdui-hidden-sm-up downloadurl" mdui-tooltip="{content: '下载链接'}"><i class="mdui-icon material-icons">cloud_download</i></a>`;
+  document.querySelector("#admin-menu").innerHTML +=
+    '<li class="mdui-menu-item"><a href="javascript:void(0);"class="mdui-ripple downloadurl"><i class="mdui-menu-item-icon mdui-icon material-icons">cloud_download</i>下载链接</a></li>';
+  document.querySelector(
+    ".mdui-toolbar"
+  ).innerHTML += `<a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple mdui-hidden-sm-up downloadurl" mdui-tooltip="{content: '下载链接'}"><i class="mdui-icon material-icons">cloud_download</i></a>`;
 </script>
 <!--IsFileEnd-->

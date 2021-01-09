@@ -1,12 +1,43 @@
-import marked from 'marked';
+import marked from "marked";
 //import $ from 'mdui.jq';
-import mdui from 'mdui';
+import mdui from "mdui";
+import hljs from "highlight.js";
 const $ = mdui.$;
-export default async()=>{
-    if (document.getElementById("head")) {
-        $('#head').html(marked($('#head-md').html()));
-    }
-    if (document.getElementById("readme")) {
-        $('#readme').html(marked($('#readme-md').html()));
-    }
+export default async () => {
+  if (document.getElementById("head")) {
+    marked.setOptions({
+      renderer: new marked.Renderer(),
+      mangle:false,
+      highlight: function (code, language) {
+          const validLanguage = hljs.getLanguage(language) ? language : 'plaintext';
+          return hljs.highlight(validLanguage, code).value;
+      },
+      pedantic: false,
+      gfm: true,
+      breaks: false,
+      sanitize: false,
+      smartLists: true,
+      smartypants: false,
+      xhtml: false
+  });
+    $("#head").html(marked(document.querySelector("#head-md").innerText));
+  }
+  if (document.getElementById("readme")) {
+    marked.setOptions({
+      renderer: new marked.Renderer(),
+      mangle:false,
+      highlight: function (code, language) {
+          const validLanguage = hljs.getLanguage(language) ? language : 'plaintext';
+          return hljs.highlight(validLanguage, code).value;
+      },
+      pedantic: false,
+      gfm: true,
+      breaks: false,
+      sanitize: false,
+      smartLists: true,
+      smartypants: false,
+      xhtml: false
+  });
+    $("#readme").html(marked(document.querySelector("#readme-md").innerText));
+  }
 };

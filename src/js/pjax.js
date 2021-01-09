@@ -1,4 +1,4 @@
-import "nprogress/nprogress.css";
+import "../css/nprogress.css";
 import Pjax from "./pjax_lib";
 import nprogress from "nprogress";
 const whenpjax = () => {
@@ -23,7 +23,7 @@ export default () => {
   pjax.handleResponse = function (responseText, request, href, options) {
     if (request.status !== 200) {
       location.href = href;
-    }else {
+    } else {
       pjax._handleResponse(responseText, request, href, options);
     }
   };

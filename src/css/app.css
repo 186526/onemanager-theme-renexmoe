@@ -1,37 +1,40 @@
 @font-face {
-    font-family: 'Product Sans';
-    src: local('Product Sans Regular'), local('Google Sans Regular'), url(https://cdn.jsdelivr.net/gh/186526/jsdelivr@1.1.8/static/ProductSans-Regular.woff2)format('woff2');
+  font-family: "Product Sans";
+  src: local("Product Sans Regular"), local("Google Sans Regular"),
+    url(https://cdn.jsdelivr.net/gh/186526/jsdelivr@1.1.8/static/ProductSans-Regular.woff2)
+      format("woff2");
 }
 
 body {
-    font-family: Roboto, Noto Sans SC, Noto, Helvetica, Arial, sans-serif
+  font-family: Roboto, Noto Sans SC, Noto, Helvetica, Arial, sans-serif;
 }
 
 .mdui-container {
-    max-width: 950px
+  max-width: 950px;
 }
 
 .mdui-drawer-close {
-    display: none
+  display: none;
 }
 
 .mdui-drawer .mdui-list-item {
-    padding-left: 20px;
-    border-radius: 0 50px 50px 0
+  padding-left: 20px;
+  border-radius: 0 50px 50px 0;
 }
 
-.mdui-toolbar>a,
+.mdui-toolbar > a,
 .mdui-chip-title,
 .mdui-dialog-title {
-    font-family: Product Sans, Noto Sans SC, Roboto, Noto, Helvetica, Arial, sans-serif
+  font-family: Product Sans, Noto Sans SC, Roboto, Noto, Helvetica, Arial,
+    sans-serif;
 }
 
 footer a {
-    text-decoration: none
+  text-decoration: none;
 }
 
 .mdui-chip {
-    margin: 20px
+  margin: 20px;
 }
 
 .mdui-typo h1,
@@ -40,48 +43,54 @@ footer a {
 .mdui-typo h4,
 .mdui-typo h5,
 .mdui-typo h6 {
-    font-family: Product Sans, Noto Sans SC;
-    margin-top: 0.2em
+  font-family: Product Sans, Noto Sans SC;
+  margin-top: 0.2em;
 }
 
-@media(max-width:740px) {
+@media (max-width: 740px) {
+  .mdui-col-sm-2,
+  .mdui-col-sm-3,
+  .forcedownload {
+    display: none;
+  }
 
-    .mdui-col-sm-2,
-    .mdui-col-sm-3,
-    .forcedownload {
-        display: none
-    }
+  .mdui-col-xs-12 {
+    width: 100%;
+  }
 
-    .mdui-col-xs-12 {
-        width: 100%
-    }
+}
 
-    .mdui-drawer .mdui-list-item {
-        margin-right:5px;
-    }
+@media (max-width: 1024px) {
+  .mdui-drawer .mdui-list-item {
+    margin-right: 5px;
+  }
 }
 
 .mdui-list-item-icon {
-    color: black
+  color: black;
 }
 
 .mdui-typo {
-    border-radius: 8px
+  border-radius: 8px;
 }
 
 .mdui-dialog {
-    border-radius: 8px
+  border-radius: 8px;
 }
 
 .mdui-container .mdui-list-item {
-    border-radius: 50px;
+  border-radius: 50px;
 }
 
 #file {
-    margin-top: 1%;
+  margin-top: 1%;
 }
 
 #head-md,
 #readme-md {
-    display: none;
+  display: none;
+}
+
+.mdui-theme-layout-dark .hljs-keyword, .hljs-selector-tag{
+  color:#dadada !important;
 }

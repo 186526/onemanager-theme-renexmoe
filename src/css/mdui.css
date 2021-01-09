@@ -5504,7 +5504,8 @@ body.mdui-locked {
 .mdui-typo kbd,
 .mdui-typo samp,
 .mdui-typo pre tt {
-  font-family: Consolas, Courier, "Courier New", monospace;
+  font-family: JetBrains Mono, Fira Code, Sarasa Mono SC, Cascadia Code, Menlo,
+  Consolas, monaco, Noto Sans SC;
 }
 .mdui-typo figcaption {
   color: rgba(0, 0, 0, 0.54);

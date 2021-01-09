@@ -21,6 +21,7 @@
   "author": "186526 <i@186526.xyz>",
   "license": "GPL-3.0-or-later",
   "dependencies": {
+    "highlight.js": "^10.5.0",
     "marked": "^1.2.6",
     "mdui": "^1.0.1",
     "nprogress": "^0.2.0",
@@ -35,5 +36,5 @@
     "prettier": "^2.2.1",
     "snowpack": "^2.18.2"
   },
-  "homepage": "https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.1.1/"
+  "homepage": "https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.1.2/"
 }

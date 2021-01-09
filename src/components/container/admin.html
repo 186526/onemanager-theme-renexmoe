@@ -1,21 +1,35 @@
 <ul class="mdui-menu" id="admin-menu">
-    <li class="mdui-menu-item"><a href="javascript:;" class="mdui-ripple back"><i
-                class="mdui-menu-item-icon mdui-icon material-icons">arrow_back</i>返回上一页</a></li>
-    <!--AdminStart-->
-    <li class="mdui-menu-item"><a href="javascript:;" class="mdui-ripple refresh"><i
-                class="mdui-menu-item-icon mdui-icon material-icons">refresh</i>刷新缓存</a></li>
-    <!--AdminEnd-->
+  <li class="mdui-menu-item">
+    <a href="javascript:;" class="mdui-ripple back"
+      ><i class="mdui-menu-item-icon mdui-icon material-icons">arrow_back</i
+      >返回上一页</a
+    >
+  </li>
+  <!--AdminStart-->
+  <li class="mdui-menu-item">
+    <a href="javascript:;" class="mdui-ripple refresh"
+      ><i class="mdui-menu-item-icon mdui-icon material-icons">refresh</i
+      >刷新缓存</a
+    >
+  </li>
+  <!--AdminEnd-->
 </ul>
-<i id="mouseplace" style="position: absolute;"></i>
+<i id="mouseplace" style="position: absolute"></i>
 <form action="?admin" method="post">
-    <div class="mdui-dialog" id="login_input">
-        <div class="mdui-dialog-title">登录</div>
-        <div class="mdui-dialog-content" style="height: 108px;">
-            <div class="mdui-textfield mdui-textfield-floating-label"><i class="mdui-icon material-icons">lock</i><label
-                    class="mdui-textfield-label">密码</label><input class="mdui-textfield-input" name="password1"
-                    type="password"></div>
-        </div>
-        <div class="mdui-dialog-actions"><button class="mdui-btn mdui-ripple" mdui-dialog-close="">取消</button><button
-                class="mdui-btn mdui-ripple" type="submit" value="登录">登录</button></div>
+  <div class="mdui-dialog" id="login_input">
+    <div class="mdui-dialog-title">登录</div>
+    <div class="mdui-dialog-content" style="height: 108px">
+      <div class="mdui-textfield mdui-textfield-floating-label">
+        <i class="mdui-icon material-icons">lock</i
+        ><label class="mdui-textfield-label">密码</label
+        ><input class="mdui-textfield-input" name="password1" type="new-password" />
+      </div>
     </div>
+    <div class="mdui-dialog-actions">
+      <button class="mdui-btn mdui-ripple" mdui-dialog-close="">取消</button
+      ><button class="mdui-btn mdui-ripple" type="submit" value="登录">
+        登录
+      </button>
+    </div>
+  </div>
 </form>

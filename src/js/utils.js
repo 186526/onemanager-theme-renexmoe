@@ -31,14 +31,14 @@ export async function refresh(url) {
   }
 }
 /**
- * 
+ *
  *  Logout Onemanager
- * 
+ *
  *  @param {null} - Nothing to param here
  *  @return {null} - Nothing Can return here
- * 
+ *
  */
 export async function logout() {
-  cookies.removeItem("admin","/");
+  cookies.removeItem("admin", "/");
   location.reload();
 }
