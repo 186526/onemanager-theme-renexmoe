@@ -9,7 +9,14 @@ index = index.replace(
 );
 index = index.replace(
   '<script type="module" src="/renexmoe_assets/js/app.js"></script>',
-  `<script src="${assets["webpack-runtime.js"]}"></script>
-    <script src="${assets["app.js"]}"></script>`
+  ((assets)=>{
+    let a = "";
+    for(let b in assets){
+      if(b.split(".")[b.split(".").length-1]==="js"){
+        a+=`<script src="${assets[b]}"></script>`;
+      }
+    }
+    return a;
+  })(assets)
 );
 fs.writeFileSync("./build/index.html", index, { encoding: "utf8" });

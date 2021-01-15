@@ -26,11 +26,12 @@ module.exports = {
         htmlMinifierOptions: false,
         manifest: true,
         extendConfig: (config) => {
+          config.optimization.usedExports = true;
           config.optimization.splitChunks = {
             chunks: 'async',
             minSize: 30000,
-            maxSize: 0,
-            minChunks: 1,
+            maxSize: 400000,
+            minChunks: 3,
             maxAsyncRequests: 5,
             maxInitialRequests: 3,
             automaticNameDelimiter: '~',
@@ -38,7 +39,7 @@ module.exports = {
             cacheGroups: {
               vendors: {
                 test: /[\\/]node_modules[\\/]/,
-                priority: -10
+                priority: -10,
               },
               default: {
                 minChunks: 2,

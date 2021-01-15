@@ -26,6 +26,7 @@ globalThis.renexmoe = {
     console.log(`renexmoe - init - Start EventLister`);
     toggle();
     highlight();
+    flyingPages();
   },
   pjax: pjax(),
 };
@@ -36,7 +37,6 @@ mdui.$(() => {
   menu();
   drawertoggle();
   console.log(`renexmoe - init - Start FlyingPages`);
-  flyingPages();
   console.log(`renexmoe - init - Init MDUI`);
   window.renexmoe.mutation();
   document.addEventListener("pjax:success", window.renexmoe.mutation);
