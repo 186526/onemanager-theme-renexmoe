@@ -1,5 +1,5 @@
-import json from "./pack";
-import env from "/__snowpack__/env";
+import json from "../pack.js";
+const MODE = import.meta.env.MODE;
 export default async function check() {
   let url = new URL("https://public.186526.xyz/renexmoe/checkupdate");
   url.search = `?version=${json.version}`;
@@ -34,6 +34,6 @@ export async function click() {
             </ul>
         </div>
         `,
-    `当前版本是 ${json.version}-${env.MODE}-${json.builder},${answer.status}`
+    `当前版本是 ${json.version}-${MODE}-${json.builder},${answer.status}`
   );
 }

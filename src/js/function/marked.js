@@ -3,7 +3,7 @@ import marked from "marked";
 import mdui from "mdui";
 const $ = mdui.$;
 export default async () => {
-  return import("./highlight.js").then(({default:hljs})=>{
+  return import("../lib/highlight.js").then(({default:hljs})=>{
     if (document.getElementById("head")) {
       marked.setOptions({
         renderer: new marked.Renderer(),

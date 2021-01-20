@@ -1,5 +1,5 @@
-import "../css/nprogress.css";
-import Pjax from "./pjax_lib";
+import "../../css/nprogress.css";
+import Pjax from "../lib/pjax_lib.js";
 import nprogress from "nprogress";
 const whenpjax = () => {
   nprogress.inc();

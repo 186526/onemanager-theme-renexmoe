@@ -1,5 +1,5 @@
 import mdui from "mdui";
-import cookies from "./cookies";
+import cookies from "./lib/cookies";
 export default {
   /**
    *
@@ -24,7 +24,7 @@ export async function refresh(url) {
   const GetURL = new URL(url);
   GetURL.search = "?RefreshCache";
   const req = await fetch(GetURL.href);
-  if (req.status === 302) {
+  if (req.status === 302 || req.status === 202) {
     return true;
   } else {
     return false;

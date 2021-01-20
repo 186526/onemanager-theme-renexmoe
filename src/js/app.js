@@ -1,16 +1,22 @@
+/*!
+ * renexmoe v1.1.4 (https://github.com/186526/onemanager-theme-renexmoe)
+ * Copyright 2020-2021 186526 <i@186526.xyz>
+ * Licensed under GPL-3.0
+ */
 import "../css/notosans.css";
 import "../css/mdui.css";
 import "../css/app.css";
 import mdui from "mdui";
-import pjax from "./pjax.js";
+import pjax from "./function/pjax.js";
 import theme from "./theme.js";
-import toggle from "./toggle.js";
-import { drawertoggle } from "./toggle.js";
-import sort from "./sort.js";
-import menu from "./menu.js";
-import marked from "./marked.js";
-import flyingPages from "./flyingpages.js";
-import highlight from "./code.js";
+import toggle from "./function/toggle.js";
+import { drawertoggle } from "./function/toggle.js";
+import sort from "./function/sort.js";
+import menu from "./function/menu.js";
+import marked from "./function/marked.js";
+import flyingPages from "./lib/flyingpages.js";
+import highlight from "./function/code.js";
+import pack from './pack.js';
 globalThis.mdui = mdui;
 globalThis.renexmoe = {
   toggle_theme: theme.toggle,
@@ -29,6 +35,8 @@ globalThis.renexmoe = {
     flyingPages();
   },
   pjax: pjax(),
+  renexmoe:pack,
+  version:pack,
 };
 mdui.$(() => {
   console.log("\n %c OneManager-theme-renexmoe | Powered by OneManager-php && Webpack | 186526 \n", "color: #fff; background: #444; padding:5px 0;");
@@ -41,6 +49,4 @@ mdui.$(() => {
   window.renexmoe.mutation();
   document.addEventListener("pjax:success", window.renexmoe.mutation);
 });
-window.mdui = globalThis.mdui;
-window.renexmoe = globalThis.renexmoe;
 export default globalThis.renexmoe;

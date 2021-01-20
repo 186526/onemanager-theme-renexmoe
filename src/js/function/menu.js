@@ -1,4 +1,5 @@
 import mdui from "mdui";
+globalThis.listenerStatus = false;
 const openadminmenu = () => {
   let menu = new mdui.Menu("#mouseplace", "#admin-menu");
   let menudom = document.getElementById("admin-menu");
@@ -7,7 +8,13 @@ const openadminmenu = () => {
   menudom.style.top = mouseplace.style.top;
   menu.open();
 };
-export default () => {
+export default StartListener;
+export async function StopListener(){
+  document.onmousemove = undefined;
+  document.body.oncontextmenu = undefined;
+  listenerStatus = false;
+}
+export async function StartListener(){
   document.onmousemove = function (e) {
     let $e = event || window.event;
     let $scrollX =
@@ -21,8 +28,17 @@ export default () => {
     mouseplace.style.top = $y + "px";
   };
   document.body.oncontextmenu = function (e) {
-    var e = e || window.event;
-    e.preventDefault();
+    var c = e || window.event;
+    c.preventDefault();
     openadminmenu();
   };
-};
+  listenerStatus = true;
+}
+export async function ToggleListener(){
+  if(listenerStatus) {
+    return StopListener();
+  }else{
+    return StartListener();
+  }
+}
+globalThis.ToggleListener = ToggleListener;

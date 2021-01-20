@@ -1,7 +1,7 @@
 /** @type {import("snowpack").SnowpackUserConfig}*/
 module.exports = {
   mount: {
-    "src/html_dist": "/",
+    "src/html": "/",
     "src/js": "/renexmoe_assets/js",
     "src/css": "/renexmoe_assets/css",
     //"./package.json":"/renexmoe_assets/package.json",
@@ -30,7 +30,7 @@ module.exports = {
           config.optimization.splitChunks = {
             chunks: 'async',
             minSize: 30000,
-            maxSize: 400000,
+            maxSize: 250000,
             minChunks: 3,
             maxAsyncRequests: 5,
             maxInitialRequests: 3,

@@ -1,5 +1,5 @@
 import mdui from "mdui";
-import cookies from "./cookies.js";
+import cookies from "./lib/cookies.js";
 const $ = mdui.$;
 const func = {
   mutation: () => {

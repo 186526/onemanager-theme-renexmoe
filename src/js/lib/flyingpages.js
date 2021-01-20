@@ -190,5 +190,5 @@ function flyingPages() {
   document.addEventListener("touchstart", touchStartListener, listenerOptions);
 }
 export default () => {
-  flyingPages();
+  return flyingPages();
 };
