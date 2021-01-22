@@ -2,12 +2,12 @@
  * mdui 1.0.1 (https://mdui.org)
  * Copyright 2016-2021 zdhxiong
  * Licensed under MIT
- *//**
+ */ /**
  * =============================================================================
  * ************   公共样式   ************
  * =============================================================================
  */
- * {
+* {
   -webkit-tap-highlight-color: transparent;
 }
 body {
@@ -54,11 +54,11 @@ body.mdui-locked {
   z-index: 2000;
   background: rgba(0, 0, 0, 0.4);
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   visibility: hidden;
   opacity: 0;
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-property: opacity, visibility;
   transition-property: opacity, visibility;
   will-change: opacity;
@@ -130,7 +130,7 @@ body.mdui-locked {
  * .mdui-theme-accent-[color] .mdui-color-theme-[degree]
  */
 .mdui-theme-accent-pink .mdui-color-theme-accent {
-  background-color: #FF4081 !important;
+  background-color: #ff4081 !important;
   color: #ffffff !important;
 }
 /**
@@ -142,7 +142,7 @@ body.mdui-locked {
  * .mdui-color-[color]-[degree]
  */
 .mdui-color-pink-accent {
-  background-color: #FF4081 !important;
+  background-color: #ff4081 !important;
   color: #ffffff !important;
 }
 /**
@@ -156,7 +156,7 @@ body.mdui-locked {
 }
 .mdui-color-white {
   color: rgba(0, 0, 0, 0.87) !important;
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
 }
 .mdui-color-transparent {
   background-color: transparent !important;
@@ -170,7 +170,7 @@ body.mdui-locked {
  * .mdui-theme-accent-[color] .mdui-text-color-theme-[degree]
  */
 .mdui-theme-accent-pink .mdui-text-color-theme-accent {
-  color: #FF4081 !important;
+  color: #ff4081 !important;
 }
 /**
  * .mdui-text-color-[color]
@@ -181,7 +181,7 @@ body.mdui-locked {
  * .mdui-text-color-[color]-[degree]
  */
 .mdui-text-color-pink-accent {
-  color: #FF4081 !important;
+  color: #ff4081 !important;
 }
 /**
  * .mdui-text-color-black
@@ -220,7 +220,7 @@ body.mdui-locked {
  * .mdui-text-color-white-[]
  */
 .mdui-text-color-white {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 .mdui-text-color-white-text {
   color: #ffffff !important;
@@ -594,8 +594,8 @@ body.mdui-locked {
   display: -ms-flexbox !important;
   display: flex !important;
   -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
 }
 /**
  * ========================= 文本对齐方式
@@ -643,7 +643,7 @@ body.mdui-locked {
 .mdui-clearfix::before,
 .mdui-clearfix::after {
   display: table;
-  content: ' ';
+  content: " ";
 }
 .mdui-clearfix::after {
   clear: both;
@@ -775,13 +775,17 @@ body.mdui-locked {
  */
 @font-face {
   font-weight: 400;
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-style: normal;
-  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/icons/material-icons/MaterialIcons-Regular.woff2) format('woff2'), url(https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/icons/material-icons/MaterialIcons-Regular.woff) format('woff');
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/icons/material-icons/MaterialIcons-Regular.woff2)
+      format("woff2"),
+    url(https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/icons/material-icons/MaterialIcons-Regular.woff)
+      format("woff");
 }
 .material-icons {
   /* stylelint-disable-next-line */
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
@@ -789,8 +793,8 @@ body.mdui-locked {
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
-  -webkit-font-feature-settings: 'liga';
-          font-feature-settings: 'liga';
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
 }
 /**
  * =============================================================================
@@ -834,87 +838,135 @@ body.mdui-locked {
  */
 @font-face {
   font-weight: 100;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-display: swap;
-  src: local('Roboto Thin'), local('Roboto-Thin'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Thin.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Thin.woff') format('woff');
+  src: local("Roboto Thin"), local("Roboto-Thin"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Thin.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Thin.woff")
+      format("woff");
 }
 @font-face {
   font-weight: 100;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: italic;
   font-display: swap;
-  src: local('Roboto ThinItalic'), local('Roboto-ThinItalic'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-ThinItalic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-ThinItalic.woff') format('woff');
+  src: local("Roboto ThinItalic"), local("Roboto-ThinItalic"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-ThinItalic.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-ThinItalic.woff")
+      format("woff");
 }
 @font-face {
   font-weight: 300;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-display: swap;
-  src: local('Roboto Light'), local('Roboto-Light'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Light.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Light.woff') format('woff');
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Light.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Light.woff")
+      format("woff");
 }
 @font-face {
   font-weight: 300;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: italic;
   font-display: swap;
-  src: local('Roboto LightItalic'), local('Roboto-LightItalic'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-LightItalic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-LightItalic.woff') format('woff');
+  src: local("Roboto LightItalic"), local("Roboto-LightItalic"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-LightItalic.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-LightItalic.woff")
+      format("woff");
 }
 @font-face {
   font-weight: 400;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-display: swap;
-  src: local('Roboto Regular'), local('Roboto-Regular'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Regular.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Regular.woff') format('woff');
+  src: local("Roboto Regular"), local("Roboto-Regular"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Regular.woff")
+      format("woff");
 }
 @font-face {
   font-weight: 400;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: italic;
   font-display: swap;
-  src: local('Roboto RegularItalic'), local('Roboto-RegularItalic'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-RegularItalic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-RegularItalic.woff') format('woff');
+  src: local("Roboto RegularItalic"), local("Roboto-RegularItalic"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-RegularItalic.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-RegularItalic.woff")
+      format("woff");
 }
 @font-face {
   font-weight: 500;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-display: swap;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Medium.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Medium.woff') format('woff');
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Medium.woff")
+      format("woff");
 }
 @font-face {
   font-weight: 500;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: italic;
   font-display: swap;
-  src: local('Roboto MediumItalic'), local('Roboto-MediumItalic'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-MediumItalic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-MediumItalic.woff') format('woff');
+  src: local("Roboto MediumItalic"), local("Roboto-MediumItalic"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-MediumItalic.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-MediumItalic.woff")
+      format("woff");
 }
 @font-face {
   font-weight: 700;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-display: swap;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Bold.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Bold.woff') format('woff');
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Bold.woff")
+      format("woff");
 }
 @font-face {
   font-weight: 700;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: italic;
   font-display: swap;
-  src: local('Roboto BoldItalic'), local('Roboto-BoldItalic'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-BoldItalic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-BoldItalic.woff') format('woff');
+  src: local("Roboto BoldItalic"), local("Roboto-BoldItalic"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-BoldItalic.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-BoldItalic.woff")
+      format("woff");
 }
 @font-face {
   font-weight: 900;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-display: swap;
-  src: local('Roboto Black'), local('Roboto-Black'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Black.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Black.woff') format('woff');
+  src: local("Roboto Black"), local("Roboto-Black"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Black.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-Black.woff")
+      format("woff");
 }
 @font-face {
   font-weight: 900;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: italic;
   font-display: swap;
-  src: local('Roboto BlackItalic'), local('Roboto-BlackItalic'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-BlackItalic.woff2') format('woff2'), url('https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-BlackItalic.woff') format('woff');
+  src: local("Roboto BlackItalic"), local("Roboto-BlackItalic"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-BlackItalic.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/fonts/roboto/Roboto-BlackItalic.woff")
+      format("woff");
 }
 /**
  * =============================================================================
@@ -1057,14 +1109,15 @@ body.mdui-locked {
 }
 .mdui-typo q::before,
 .mdui-typo q::after {
-  content: '';
+  content: "";
 }
 .mdui-typo pre,
 .mdui-typo code,
 .mdui-typo kbd,
 .mdui-typo samp,
 .mdui-typo pre tt {
-  font-family: JetBrains Mono,Fira Code,Sarasa Mono SC,Cascadia Code,Menlo,Consolas,monaco,Noto Sans SC;
+  font-family: "JetBrains Mono", "Fira Code", "Sarasa Mono SC", monaco,
+    Noto Sans SC, monospace;
 }
 .mdui-typo figcaption {
   color: rgba(0, 0, 0, 0.54);
@@ -1104,7 +1157,7 @@ body.mdui-locked {
   margin-bottom: 0;
 }
 .mdui-typo a {
-  color: #FF4081;
+  color: #ff4081;
   position: relative;
   display: inline-block;
   overflow: hidden;
@@ -1119,19 +1172,19 @@ body.mdui-locked {
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #FF4081;
+  background-color: #ff4081;
   -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  transform: scaleX(0);
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  content: ' ';
+  content: " ";
 }
 .mdui-typo a:hover::before,
 .mdui-typo a:focus::before {
   -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 .mdui-typo small {
   font-size: 80%;
@@ -1231,7 +1284,7 @@ body.mdui-locked {
 }
 .mdui-typo ins {
   text-decoration: none;
-  border-bottom: 1px solid ;
+  border-bottom: 1px solid;
 }
 .mdui-typo u {
   text-decoration: none;
@@ -1299,10 +1352,10 @@ body.mdui-locked {
  * =============================================================================
  */
 .mdui-theme-accent-pink .mdui-typo a {
-  color: #FF4081;
+  color: #ff4081;
 }
 .mdui-theme-accent-pink .mdui-typo a::before {
-  background-color: #FF4081;
+  background-color: #ff4081;
 }
 /**
  * =============================================================================
@@ -1331,7 +1384,7 @@ body.mdui-locked {
   color: rgba(255, 255, 255, 0.7);
 }
 .mdui-theme-layout-dark .mdui-typo code {
-  color: #FFCDD2;
+  color: #ffcdd2;
   background-color: #424242;
 }
 .mdui-theme-layout-dark .mdui-typo pre {
@@ -1367,7 +1420,7 @@ body.mdui-locked {
     color: rgba(255, 255, 255, 0.7);
   }
   .mdui-theme-layout-auto .mdui-typo code {
-    color: #FFCDD2;
+    color: #ffcdd2;
     background-color: #424242;
   }
   .mdui-theme-layout-auto .mdui-typo pre {
@@ -1389,7 +1442,7 @@ body.mdui-locked {
 .mdui-container,
 .mdui-container-fluid {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-right: auto;
   margin-left: auto;
   padding-right: 8px;
@@ -1399,7 +1452,7 @@ body.mdui-locked {
 .mdui-container-fluid::after {
   display: table;
   clear: both;
-  content: '';
+  content: "";
 }
 .mdui-container {
   width: 96%;
@@ -1424,7 +1477,7 @@ body.mdui-locked {
 [class*="mdui-row-"]::after {
   display: table;
   clear: both;
-  content: '';
+  content: "";
 }
 [class*="mdui-col-xs-"],
 [class*="mdui-col-sm-"],
@@ -1434,7 +1487,7 @@ body.mdui-locked {
 .mdui-col {
   position: relative;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   min-height: 1px;
   padding-right: 8px;
   padding-left: 8px;
@@ -2129,116 +2182,167 @@ body.mdui-locked {
  */
 .mdui-shadow-0 {
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 .mdui-shadow-1 {
-  -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-2 {
-  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-3 {
-  -webkit-box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+    0 1px 8px 0 rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-4 {
-  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-5 {
-  -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 5px 8px 0 rgba(0, 0, 0, 0.14), 0 1px 14px 0 rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px 0 rgba(0, 0, 0, 0.14),
+    0 1px 14px 0 rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-6 {
-  -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-7 {
-  -webkit-box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2), 0 7px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 16px 1px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2), 0 7px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 16px 1px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2),
+    0 7px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 16px 1px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2),
+    0 7px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 16px 1px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-8 {
-  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-9 {
-  -webkit-box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2), 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2), 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2),
+    0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2),
+    0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-10 {
-  -webkit-box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2), 0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2), 0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2),
+    0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.2),
+    0 10px 14px 1px rgba(0, 0, 0, 0.14), 0 4px 18px 3px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-11 {
-  -webkit-box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2), 0 11px 15px 1px rgba(0, 0, 0, 0.14), 0 4px 20px 3px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2), 0 11px 15px 1px rgba(0, 0, 0, 0.14), 0 4px 20px 3px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2),
+    0 11px 15px 1px rgba(0, 0, 0, 0.14), 0 4px 20px 3px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2),
+    0 11px 15px 1px rgba(0, 0, 0, 0.14), 0 4px 20px 3px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-12 {
-  -webkit-box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+    0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+    0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-13 {
-  -webkit-box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 13px 19px 2px rgba(0, 0, 0, 0.14), 0 5px 24px 4px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 13px 19px 2px rgba(0, 0, 0, 0.14), 0 5px 24px 4px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+    0 13px 19px 2px rgba(0, 0, 0, 0.14), 0 5px 24px 4px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+    0 13px 19px 2px rgba(0, 0, 0, 0.14), 0 5px 24px 4px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-14 {
-  -webkit-box-shadow: 0 7px 9px -4px rgba(0, 0, 0, 0.2), 0 14px 21px 2px rgba(0, 0, 0, 0.14), 0 5px 26px 4px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 7px 9px -4px rgba(0, 0, 0, 0.2), 0 14px 21px 2px rgba(0, 0, 0, 0.14), 0 5px 26px 4px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 7px 9px -4px rgba(0, 0, 0, 0.2),
+    0 14px 21px 2px rgba(0, 0, 0, 0.14), 0 5px 26px 4px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 7px 9px -4px rgba(0, 0, 0, 0.2),
+    0 14px 21px 2px rgba(0, 0, 0, 0.14), 0 5px 26px 4px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-15 {
-  -webkit-box-shadow: 0 8px 9px -5px rgba(0, 0, 0, 0.2), 0 15px 22px 2px rgba(0, 0, 0, 0.14), 0 6px 28px 5px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 8px 9px -5px rgba(0, 0, 0, 0.2), 0 15px 22px 2px rgba(0, 0, 0, 0.14), 0 6px 28px 5px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 8px 9px -5px rgba(0, 0, 0, 0.2),
+    0 15px 22px 2px rgba(0, 0, 0, 0.14), 0 6px 28px 5px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 8px 9px -5px rgba(0, 0, 0, 0.2),
+    0 15px 22px 2px rgba(0, 0, 0, 0.14), 0 6px 28px 5px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-16 {
-  -webkit-box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2), 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2), 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2),
+    0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2),
+    0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-17 {
-  -webkit-box-shadow: 0 8px 11px -5px rgba(0, 0, 0, 0.2), 0 17px 26px 2px rgba(0, 0, 0, 0.14), 0 6px 32px 5px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 8px 11px -5px rgba(0, 0, 0, 0.2), 0 17px 26px 2px rgba(0, 0, 0, 0.14), 0 6px 32px 5px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 8px 11px -5px rgba(0, 0, 0, 0.2),
+    0 17px 26px 2px rgba(0, 0, 0, 0.14), 0 6px 32px 5px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 8px 11px -5px rgba(0, 0, 0, 0.2),
+    0 17px 26px 2px rgba(0, 0, 0, 0.14), 0 6px 32px 5px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-18 {
-  -webkit-box-shadow: 0 9px 11px -5px rgba(0, 0, 0, 0.2), 0 18px 28px 2px rgba(0, 0, 0, 0.14), 0 7px 34px 6px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 9px 11px -5px rgba(0, 0, 0, 0.2), 0 18px 28px 2px rgba(0, 0, 0, 0.14), 0 7px 34px 6px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 9px 11px -5px rgba(0, 0, 0, 0.2),
+    0 18px 28px 2px rgba(0, 0, 0, 0.14), 0 7px 34px 6px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 9px 11px -5px rgba(0, 0, 0, 0.2),
+    0 18px 28px 2px rgba(0, 0, 0, 0.14), 0 7px 34px 6px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-19 {
-  -webkit-box-shadow: 0 9px 12px -6px rgba(0, 0, 0, 0.2), 0 19px 29px 2px rgba(0, 0, 0, 0.14), 0 7px 36px 6px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 9px 12px -6px rgba(0, 0, 0, 0.2), 0 19px 29px 2px rgba(0, 0, 0, 0.14), 0 7px 36px 6px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 9px 12px -6px rgba(0, 0, 0, 0.2),
+    0 19px 29px 2px rgba(0, 0, 0, 0.14), 0 7px 36px 6px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 9px 12px -6px rgba(0, 0, 0, 0.2),
+    0 19px 29px 2px rgba(0, 0, 0, 0.14), 0 7px 36px 6px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-20 {
-  -webkit-box-shadow: 0 10px 13px -6px rgba(0, 0, 0, 0.2), 0 20px 31px 3px rgba(0, 0, 0, 0.14), 0 8px 38px 7px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 10px 13px -6px rgba(0, 0, 0, 0.2), 0 20px 31px 3px rgba(0, 0, 0, 0.14), 0 8px 38px 7px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 10px 13px -6px rgba(0, 0, 0, 0.2),
+    0 20px 31px 3px rgba(0, 0, 0, 0.14), 0 8px 38px 7px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 10px 13px -6px rgba(0, 0, 0, 0.2),
+    0 20px 31px 3px rgba(0, 0, 0, 0.14), 0 8px 38px 7px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-21 {
-  -webkit-box-shadow: 0 10px 13px -6px rgba(0, 0, 0, 0.2), 0 21px 33px 3px rgba(0, 0, 0, 0.14), 0 8px 40px 7px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 10px 13px -6px rgba(0, 0, 0, 0.2), 0 21px 33px 3px rgba(0, 0, 0, 0.14), 0 8px 40px 7px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 10px 13px -6px rgba(0, 0, 0, 0.2),
+    0 21px 33px 3px rgba(0, 0, 0, 0.14), 0 8px 40px 7px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 10px 13px -6px rgba(0, 0, 0, 0.2),
+    0 21px 33px 3px rgba(0, 0, 0, 0.14), 0 8px 40px 7px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-22 {
-  -webkit-box-shadow: 0 10px 14px -6px rgba(0, 0, 0, 0.2), 0 22px 35px 3px rgba(0, 0, 0, 0.14), 0 8px 42px 7px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 10px 14px -6px rgba(0, 0, 0, 0.2), 0 22px 35px 3px rgba(0, 0, 0, 0.14), 0 8px 42px 7px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 10px 14px -6px rgba(0, 0, 0, 0.2),
+    0 22px 35px 3px rgba(0, 0, 0, 0.14), 0 8px 42px 7px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 10px 14px -6px rgba(0, 0, 0, 0.2),
+    0 22px 35px 3px rgba(0, 0, 0, 0.14), 0 8px 42px 7px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-23 {
-  -webkit-box-shadow: 0 11px 14px -7px rgba(0, 0, 0, 0.2), 0 23px 36px 3px rgba(0, 0, 0, 0.14), 0 9px 44px 8px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 11px 14px -7px rgba(0, 0, 0, 0.2), 0 23px 36px 3px rgba(0, 0, 0, 0.14), 0 9px 44px 8px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 11px 14px -7px rgba(0, 0, 0, 0.2),
+    0 23px 36px 3px rgba(0, 0, 0, 0.14), 0 9px 44px 8px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 11px 14px -7px rgba(0, 0, 0, 0.2),
+    0 23px 36px 3px rgba(0, 0, 0, 0.14), 0 9px 44px 8px rgba(0, 0, 0, 0.12) !important;
 }
 .mdui-shadow-24 {
-  -webkit-box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12) !important;
 }
 /* 鼠标悬浮时加深阴影 */
 .mdui-hoverable {
   -webkit-transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: box-shadow;
 }
 .mdui-hoverable:hover,
 .mdui-hoverable:focus {
-  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 /**
  * =============================================================================
@@ -2252,47 +2356,47 @@ body.mdui-locked {
 /* 固定在顶部时 */
 .mdui-headroom-pinned-top {
   -webkit-transform: translate3d(0, 0, 0) !important;
-          transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
 }
 /* 在顶部隐藏时 */
 .mdui-headroom-unpinned-top {
   -webkit-transform: translate3d(0, -100%, 0) !important;
-          transform: translate3d(0, -100%, 0) !important;
+  transform: translate3d(0, -100%, 0) !important;
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 /* 固定在底部时 */
 .mdui-headroom-pinned-down {
   -webkit-transform: translate3d(0, 0, 0) !important;
-          transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
 }
 /* 在底部隐藏时 */
 .mdui-headroom-unpinned-down {
   -webkit-transform: translate3d(0, 100%, 0) !important;
-          transform: translate3d(0, 100%, 0) !important;
+  transform: translate3d(0, 100%, 0) !important;
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 /* 固定应用栏中的工具栏 */
 .mdui-headroom-pinned-toolbar {
   -webkit-transform: translate3d(0, 0, 0) !important;
-          transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important;
 }
 /* 隐藏应用栏中的工具栏 */
 .mdui-headroom-unpinned-toolbar {
   -webkit-transform: translate3d(0, -56px, 0) !important;
-          transform: translate3d(0, -56px, 0) !important;
+  transform: translate3d(0, -56px, 0) !important;
 }
 @media (min-width: 600px) {
   .mdui-headroom-unpinned-toolbar {
     -webkit-transform: translate3d(0, -64px, 0) !important;
-            transform: translate3d(0, -64px, 0) !important;
+    transform: translate3d(0, -64px, 0) !important;
   }
 }
 @media (orientation: landscape) and (max-width: 959.9px) {
   .mdui-headroom-unpinned-toolbar {
     -webkit-transform: translate3d(0, -48px, 0) !important;
-            transform: translate3d(0, -48px, 0) !important;
+    transform: translate3d(0, -48px, 0) !important;
   }
 }
 /**
@@ -2303,11 +2407,12 @@ body.mdui-locked {
 .mdui-collapse-item-header .mdui-collapse-item-arrow,
 .mdui-collapse-item-header.mdui-collapse-item-arrow {
   -webkit-transform: rotate(0);
-          transform: rotate(0);
+  transform: rotate(0);
   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform;
 }
 .mdui-collapse-item-body {
@@ -2327,7 +2432,7 @@ body.mdui-locked {
 .mdui-collapse-item-open > .mdui-collapse-item-header .mdui-collapse-item-arrow,
 .mdui-collapse-item-open > .mdui-collapse-item-header.mdui-collapse-item-arrow {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .mdui-collapse-item-open > .mdui-collapse-item-body {
   height: auto;
@@ -2389,9 +2494,9 @@ body.mdui-locked {
   overflow: hidden;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 /* Ripple */
 .mdui-ripple-wave {
@@ -2405,9 +2510,9 @@ body.mdui-locked {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   -webkit-transform: translate3d(0, 0, 0) scale(0);
-          transform: translate3d(0, 0, 0) scale(0);
+  transform: translate3d(0, 0, 0) scale(0);
   -webkit-transition-duration: 1400ms;
-          transition-duration: 1400ms;
+  transition-duration: 1400ms;
   pointer-events: none;
 }
 /* 有背景色的默认使用白色涟漪 */
@@ -2425,12 +2530,12 @@ body.mdui-locked {
 .mdui-ripple-wave-fill {
   opacity: 0.35;
   -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
+  transition-duration: 300ms;
 }
 .mdui-ripple-wave-out {
   opacity: 0;
   -webkit-transition-duration: 600ms;
-          transition-duration: 600ms;
+  transition-duration: 600ms;
 }
 /**
  * =============================================================================
@@ -2469,7 +2574,7 @@ body.mdui-locked {
 .mdui-textfield-input {
   display: block;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   height: 36px;
   margin: 0;
@@ -2485,18 +2590,20 @@ body.mdui-locked {
   border-radius: 0;
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  -webkit-transition-property: border-bottom-color, padding-right, -webkit-box-shadow;
+  transition-duration: 0.2s;
+  -webkit-transition-property: border-bottom-color, padding-right,
+    -webkit-box-shadow;
   transition-property: border-bottom-color, padding-right, -webkit-box-shadow;
   transition-property: border-bottom-color, padding-right, box-shadow;
-  transition-property: border-bottom-color, padding-right, box-shadow, -webkit-box-shadow;
+  transition-property: border-bottom-color, padding-right, box-shadow,
+    -webkit-box-shadow;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   resize: none;
 }
 .mdui-textfield-input::-webkit-input-placeholder {
@@ -2506,7 +2613,7 @@ body.mdui-locked {
 .mdui-textfield-input:not([disabled]):hover {
   border-bottom: 1px solid rgba(0, 0, 0, 0.87);
   -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.87);
-          box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.87);
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.87);
   cursor: pointer;
 }
 .mdui-textfield-input[rows] {
@@ -2521,9 +2628,9 @@ body.mdui-locked {
   color: rgba(0, 0, 0, 0.54);
   font-size: 16px;
   -webkit-transform: scale(0.75) translateY(0);
-          transform: scale(0.75) translateY(0);
+  transform: scale(0.75) translateY(0);
   -webkit-transform-origin: left;
-          transform-origin: left;
+  transform-origin: left;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   pointer-events: none;
@@ -2571,9 +2678,9 @@ body.mdui-locked {
    ============= */
 .mdui-textfield-focus .mdui-textfield-input,
 .mdui-textfield-focus .mdui-textfield-input:hover {
-  border-bottom-color: #C51162;
-  -webkit-box-shadow: 0 1px 0 0 #C51162;
-          box-shadow: 0 1px 0 0 #C51162;
+  border-bottom-color: #c51162;
+  -webkit-box-shadow: 0 1px 0 0 #c51162;
+  box-shadow: 0 1px 0 0 #c51162;
 }
 .mdui-textfield-focus .mdui-textfield-label,
 .mdui-textfield-focus .mdui-icon {
@@ -2584,16 +2691,16 @@ body.mdui-locked {
 .mdui-textfield-floating-label .mdui-textfield-label {
   color: rgba(0, 0, 0, 0.35);
   -webkit-transform: scale(1) translateY(27px);
-          transform: scale(1) translateY(27px);
+  transform: scale(1) translateY(27px);
 }
 .mdui-textfield-floating-label.mdui-textfield-focus .mdui-textfield-label,
 .mdui-textfield-floating-label.mdui-textfield-not-empty .mdui-textfield-label {
   color: rgba(0, 0, 0, 0.65);
   -webkit-transform: scale(0.75) translateY(0);
-          transform: scale(0.75) translateY(0);
+  transform: scale(0.75) translateY(0);
 }
 .mdui-textfield-floating-label.mdui-textfield-focus .mdui-textfield-label {
-  color: #E91E63;
+  color: #e91e63;
 }
 /* 可展开文本框，默认向右展开
    ========== */
@@ -2624,7 +2731,7 @@ body.mdui-locked {
   top: 0;
   right: 0;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }
 .mdui-textfield-expandable.mdui-textfield-expanded {
   width: 100%;
@@ -2634,7 +2741,7 @@ body.mdui-locked {
 }
 .mdui-textfield-expandable.mdui-textfield-expanded .mdui-textfield-close {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 /* 表单验证不通过
    =========== */
@@ -2642,23 +2749,28 @@ body.mdui-locked {
 .mdui-textfield-invalid-html5 .mdui-textfield-input,
 .mdui-textfield-invalid.mdui-textfield-focus .mdui-textfield-input,
 .mdui-textfield-invalid-html5.mdui-textfield-focus .mdui-textfield-input {
-  border-bottom-color: #FF1744 !important;
-  -webkit-box-shadow: 0 1px 0 0 #FF1744 !important;
-          box-shadow: 0 1px 0 0 #FF1744 !important;
+  border-bottom-color: #ff1744 !important;
+  -webkit-box-shadow: 0 1px 0 0 #ff1744 !important;
+  box-shadow: 0 1px 0 0 #ff1744 !important;
 }
 .mdui-textfield-invalid .mdui-textfield-label,
 .mdui-textfield-invalid-html5 .mdui-textfield-label {
-  color: #FF1744 !important;
+  color: #ff1744 !important;
 }
 .mdui-textfield-invalid.mdui-textfield-floating-label .mdui-textfield-label,
-.mdui-textfield-invalid-html5.mdui-textfield-floating-label .mdui-textfield-label {
+.mdui-textfield-invalid-html5.mdui-textfield-floating-label
+  .mdui-textfield-label {
   color: rgba(255, 23, 68, 0.35) !important;
 }
-.mdui-textfield-invalid.mdui-textfield-floating-label.mdui-textfield-focus .mdui-textfield-label,
-.mdui-textfield-invalid-html5.mdui-textfield-floating-label.mdui-textfield-focus .mdui-textfield-label,
-.mdui-textfield-invalid.mdui-textfield-floating-label.mdui-textfield-not-empty .mdui-textfield-label,
-.mdui-textfield-invalid-html5.mdui-textfield-floating-label.mdui-textfield-not-empty .mdui-textfield-label {
-  color: #FF1744 !important;
+.mdui-textfield-invalid.mdui-textfield-floating-label.mdui-textfield-focus
+  .mdui-textfield-label,
+.mdui-textfield-invalid-html5.mdui-textfield-floating-label.mdui-textfield-focus
+  .mdui-textfield-label,
+.mdui-textfield-invalid.mdui-textfield-floating-label.mdui-textfield-not-empty
+  .mdui-textfield-label,
+.mdui-textfield-invalid-html5.mdui-textfield-floating-label.mdui-textfield-not-empty
+  .mdui-textfield-label {
+  color: #ff1744 !important;
 }
 .mdui-textfield-invalid .mdui-textfield-error,
 .mdui-textfield-invalid-html5 .mdui-textfield-error {
@@ -2707,7 +2819,7 @@ body.mdui-locked {
 .mdui-theme-layout-dark .mdui-textfield-input:not([disabled]):hover {
   border-bottom-color: #ffffff;
   -webkit-box-shadow: 0 1px 0 0 #ffffff;
-          box-shadow: 0 1px 0 0 #ffffff;
+  box-shadow: 0 1px 0 0 #ffffff;
 }
 .mdui-theme-layout-dark .mdui-textfield .mdui-icon {
   color: rgba(255, 255, 255, 0.7);
@@ -2719,7 +2831,7 @@ body.mdui-locked {
   color: rgba(255, 255, 255, 0.35);
 }
 .mdui-theme-layout-dark .mdui-textfield-error {
-  color: #FF1744;
+  color: #ff1744;
 }
 .mdui-theme-layout-dark .mdui-textfield-helper {
   color: rgba(255, 255, 255, 0.7);
@@ -2729,15 +2841,17 @@ body.mdui-locked {
 }
 .mdui-theme-layout-dark .mdui-textfield-focus .mdui-textfield-input,
 .mdui-theme-layout-dark .mdui-textfield-focus .mdui-textfield-input:hover {
-  border-bottom-color: #FF4081;
-  -webkit-box-shadow: 0 1px 0 0 #FF4081;
-          box-shadow: 0 1px 0 0 #FF4081;
+  border-bottom-color: #ff4081;
+  -webkit-box-shadow: 0 1px 0 0 #ff4081;
+  box-shadow: 0 1px 0 0 #ff4081;
 }
 .mdui-theme-layout-dark .mdui-textfield-focus .mdui-textfield-label {
-  color: #FF4081;
+  color: #ff4081;
 }
 .mdui-theme-layout-dark .mdui-textfield-disabled .mdui-textfield-label,
-.mdui-theme-layout-dark .mdui-textfield-disabled .mdui-textfield-input::-webkit-input-placeholder {
+.mdui-theme-layout-dark
+  .mdui-textfield-disabled
+  .mdui-textfield-input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 .mdui-theme-layout-dark .mdui-textfield-disabled .mdui-textfield-input {
@@ -2757,7 +2871,7 @@ body.mdui-locked {
   .mdui-theme-layout-auto .mdui-textfield-input:not([disabled]):hover {
     border-bottom-color: #ffffff;
     -webkit-box-shadow: 0 1px 0 0 #ffffff;
-            box-shadow: 0 1px 0 0 #ffffff;
+    box-shadow: 0 1px 0 0 #ffffff;
   }
   .mdui-theme-layout-auto .mdui-textfield .mdui-icon {
     color: rgba(255, 255, 255, 0.7);
@@ -2769,7 +2883,7 @@ body.mdui-locked {
     color: rgba(255, 255, 255, 0.35);
   }
   .mdui-theme-layout-auto .mdui-textfield-error {
-    color: #FF1744;
+    color: #ff1744;
   }
   .mdui-theme-layout-auto .mdui-textfield-helper {
     color: rgba(255, 255, 255, 0.7);
@@ -2779,15 +2893,17 @@ body.mdui-locked {
   }
   .mdui-theme-layout-auto .mdui-textfield-focus .mdui-textfield-input,
   .mdui-theme-layout-auto .mdui-textfield-focus .mdui-textfield-input:hover {
-    border-bottom-color: #FF4081;
-    -webkit-box-shadow: 0 1px 0 0 #FF4081;
-            box-shadow: 0 1px 0 0 #FF4081;
+    border-bottom-color: #ff4081;
+    -webkit-box-shadow: 0 1px 0 0 #ff4081;
+    box-shadow: 0 1px 0 0 #ff4081;
   }
   .mdui-theme-layout-auto .mdui-textfield-focus .mdui-textfield-label {
-    color: #FF4081;
+    color: #ff4081;
   }
   .mdui-theme-layout-auto .mdui-textfield-disabled .mdui-textfield-label,
-  .mdui-theme-layout-auto .mdui-textfield-disabled .mdui-textfield-input::-webkit-input-placeholder {
+  .mdui-theme-layout-auto
+    .mdui-textfield-disabled
+    .mdui-textfield-input::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5);
   }
   .mdui-theme-layout-auto .mdui-textfield-disabled .mdui-textfield-input {
@@ -2803,35 +2919,56 @@ body.mdui-locked {
  * =============================================================================
  */
 .mdui-theme-accent-pink .mdui-textfield-focus .mdui-textfield-input {
-  border-bottom-color: #C51162;
-  -webkit-box-shadow: 0 1px 0 0 #C51162;
-          box-shadow: 0 1px 0 0 #C51162;
+  border-bottom-color: #c51162;
+  -webkit-box-shadow: 0 1px 0 0 #c51162;
+  box-shadow: 0 1px 0 0 #c51162;
 }
 .mdui-theme-accent-pink .mdui-textfield-focus .mdui-textfield-label,
-.mdui-theme-accent-pink .mdui-textfield-focus .mdui-textfield-floating-label.mdui-textfield-focus .mdui-textfield-label,
+.mdui-theme-accent-pink
+  .mdui-textfield-focus
+  .mdui-textfield-floating-label.mdui-textfield-focus
+  .mdui-textfield-label,
 .mdui-theme-accent-pink .mdui-textfield-focus .mdui-icon {
   color: rgba(197, 17, 98, 0.87);
 }
-.mdui-theme-accent-pink.mdui-theme-layout-dark .mdui-textfield-focus .mdui-textfield-input {
-  border-bottom-color: #FF4081;
-  -webkit-box-shadow: 0 1px 0 0 #FF4081;
-          box-shadow: 0 1px 0 0 #FF4081;
+.mdui-theme-accent-pink.mdui-theme-layout-dark
+  .mdui-textfield-focus
+  .mdui-textfield-input {
+  border-bottom-color: #ff4081;
+  -webkit-box-shadow: 0 1px 0 0 #ff4081;
+  box-shadow: 0 1px 0 0 #ff4081;
 }
-.mdui-theme-accent-pink.mdui-theme-layout-dark .mdui-textfield-focus .mdui-textfield-label,
-.mdui-theme-accent-pink.mdui-theme-layout-dark .mdui-textfield-focus .mdui-textfield-floating-label.mdui-textfield-focus .mdui-textfield-label,
-.mdui-theme-accent-pink.mdui-theme-layout-dark .mdui-textfield-focus .mdui-icon {
-  color: #FF4081;
+.mdui-theme-accent-pink.mdui-theme-layout-dark
+  .mdui-textfield-focus
+  .mdui-textfield-label,
+.mdui-theme-accent-pink.mdui-theme-layout-dark
+  .mdui-textfield-focus
+  .mdui-textfield-floating-label.mdui-textfield-focus
+  .mdui-textfield-label,
+.mdui-theme-accent-pink.mdui-theme-layout-dark
+  .mdui-textfield-focus
+  .mdui-icon {
+  color: #ff4081;
 }
 @media (prefers-color-scheme: dark) {
-  .mdui-theme-accent-pink.mdui-theme-layout-auto .mdui-textfield-focus .mdui-textfield-input {
-    border-bottom-color: #FF4081;
-    -webkit-box-shadow: 0 1px 0 0 #FF4081;
-            box-shadow: 0 1px 0 0 #FF4081;
+  .mdui-theme-accent-pink.mdui-theme-layout-auto
+    .mdui-textfield-focus
+    .mdui-textfield-input {
+    border-bottom-color: #ff4081;
+    -webkit-box-shadow: 0 1px 0 0 #ff4081;
+    box-shadow: 0 1px 0 0 #ff4081;
   }
-  .mdui-theme-accent-pink.mdui-theme-layout-auto .mdui-textfield-focus .mdui-textfield-label,
-  .mdui-theme-accent-pink.mdui-theme-layout-auto .mdui-textfield-focus .mdui-textfield-floating-label.mdui-textfield-focus .mdui-textfield-label,
-  .mdui-theme-accent-pink.mdui-theme-layout-auto .mdui-textfield-focus .mdui-icon {
-    color: #FF4081;
+  .mdui-theme-accent-pink.mdui-theme-layout-auto
+    .mdui-textfield-focus
+    .mdui-textfield-label,
+  .mdui-theme-accent-pink.mdui-theme-layout-auto
+    .mdui-textfield-focus
+    .mdui-textfield-floating-label.mdui-textfield-focus
+    .mdui-textfield-label,
+  .mdui-theme-accent-pink.mdui-theme-layout-auto
+    .mdui-textfield-focus
+    .mdui-icon {
+    color: #ff4081;
   }
 }
 /**
@@ -2856,15 +2993,15 @@ body.mdui-locked {
   cursor: pointer;
   opacity: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .mdui-slider-track,
 .mdui-slider-fill {
   position: absolute;
   top: 50%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 2px;
   margin-top: -1px;
 }
@@ -2873,7 +3010,7 @@ body.mdui-locked {
   display: block;
   width: 100%;
   height: 100%;
-  content: ' ';
+  content: " ";
 }
 /* 轨道 */
 .mdui-slider-track {
@@ -2889,26 +3026,39 @@ body.mdui-locked {
   left: 0;
 }
 .mdui-slider-fill::before {
-  background-color: #FF4081;
+  background-color: #ff4081;
 }
 /* 滑块 */
 .mdui-slider-thumb {
   position: absolute;
   top: 50%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 12px;
   height: 12px;
   margin-top: -6px;
-  background-color: #FF4081;
-  border: 2px solid #FF4081;
+  background-color: #ff4081;
+  border: 2px solid #ff4081;
   border-radius: 50%;
   -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  -webkit-transition: background 0.45s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1), border-radius 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background 0.45s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1), border-radius 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background 0.45s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-radius 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background 0.45s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), border-radius 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%);
+  -webkit-transition: background 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: background, border-color, transform, border-radius;
 }
 /**
@@ -2917,11 +3067,11 @@ body.mdui-locked {
  * =============================================================================
  */
 .mdui-theme-accent-pink .mdui-slider-fill::before {
-  background-color: #FF4081;
+  background-color: #ff4081;
 }
 .mdui-theme-accent-pink .mdui-slider-thumb {
-  background-color: #FF4081;
-  border: 2px solid #FF4081;
+  background-color: #ff4081;
+  border: 2px solid #ff4081;
 }
 /**
  * =============================================================================
@@ -2934,7 +3084,7 @@ body.mdui-locked {
 }
 .mdui-slider-focus .mdui-slider-thumb {
   -webkit-transform: translate(-50%) scale(1.6);
-          transform: translate(-50%) scale(1.6);
+  transform: translate(-50%) scale(1.6);
 }
 /* 滑块值为 0 */
 .mdui-slider-zero .mdui-slider-thumb {
@@ -2959,7 +3109,7 @@ body.mdui-locked {
   background-color: #bdbdbd;
   border-color: transparent !important;
   -webkit-transform: translate(-50%) scale(0.72);
-          transform: translate(-50%) scale(0.72);
+  transform: translate(-50%) scale(0.72);
 }
 /**
  * =============================================================================
@@ -2973,7 +3123,7 @@ body.mdui-locked {
   margin-left: -15px;
   border: none;
   -webkit-transform: rotate(-45deg) scale(0.4);
-          transform: rotate(-45deg) scale(0.4);
+  transform: rotate(-45deg) scale(0.4);
 }
 .mdui-slider-discrete .mdui-slider-thumb span {
   position: absolute;
@@ -2984,7 +3134,7 @@ body.mdui-locked {
   font-size: 12px;
   text-align: center;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   opacity: 0;
   -webkit-transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -2992,7 +3142,7 @@ body.mdui-locked {
 .mdui-slider-discrete.mdui-slider-focus .mdui-slider-thumb {
   border-radius: 15px 15px 15px 0;
   -webkit-transform: rotate(-45deg) scale(1) translate(22px, -22px);
-          transform: rotate(-45deg) scale(1) translate(22px, -22px);
+  transform: rotate(-45deg) scale(1) translate(22px, -22px);
 }
 .mdui-slider-discrete.mdui-slider-focus .mdui-slider-thumb span {
   opacity: 1;
@@ -3005,7 +3155,7 @@ body.mdui-locked {
 }
 .mdui-slider-discrete.mdui-slider-disabled .mdui-slider-thumb {
   -webkit-transform: rotate(-45deg) scale(0.288);
-          transform: rotate(-45deg) scale(0.288);
+  transform: rotate(-45deg) scale(0.288);
 }
 .mdui-slider-discrete.mdui-slider-zero.mdui-slider-disabled .mdui-slider-thumb {
   background-color: #bdbdbd;
@@ -3037,13 +3187,19 @@ body.mdui-locked {
 .mdui-theme-layout-dark .mdui-slider-disabled .mdui-slider-thumb {
   background-color: #4c4c4c;
 }
-.mdui-theme-layout-dark .mdui-slider-discrete.mdui-slider-zero .mdui-slider-thumb {
+.mdui-theme-layout-dark
+  .mdui-slider-discrete.mdui-slider-zero
+  .mdui-slider-thumb {
   background-color: #fefefe;
 }
-.mdui-theme-layout-dark .mdui-slider-discrete.mdui-slider-zero.mdui-slider-focus .mdui-slider-thumb {
+.mdui-theme-layout-dark
+  .mdui-slider-discrete.mdui-slider-zero.mdui-slider-focus
+  .mdui-slider-thumb {
   background-color: #5c5c5c;
 }
-.mdui-theme-layout-dark .mdui-slider-discrete.mdui-slider-zero.mdui-slider-disabled .mdui-slider-thumb {
+.mdui-theme-layout-dark
+  .mdui-slider-discrete.mdui-slider-zero.mdui-slider-disabled
+  .mdui-slider-thumb {
   background-color: #4c4c4c;
 }
 @media (prefers-color-scheme: dark) {
@@ -3057,7 +3213,9 @@ body.mdui-locked {
     background-color: #303030;
     border-color: #4c4c4c;
   }
-  .mdui-theme-layout-auto .mdui-slider-zero.mdui-slider-focus .mdui-slider-thumb {
+  .mdui-theme-layout-auto
+    .mdui-slider-zero.mdui-slider-focus
+    .mdui-slider-thumb {
     border-color: #4c4c4c;
   }
   .mdui-theme-layout-auto .mdui-slider-disabled .mdui-slider-track::before {
@@ -3069,13 +3227,19 @@ body.mdui-locked {
   .mdui-theme-layout-auto .mdui-slider-disabled .mdui-slider-thumb {
     background-color: #4c4c4c;
   }
-  .mdui-theme-layout-auto .mdui-slider-discrete.mdui-slider-zero .mdui-slider-thumb {
+  .mdui-theme-layout-auto
+    .mdui-slider-discrete.mdui-slider-zero
+    .mdui-slider-thumb {
     background-color: #fefefe;
   }
-  .mdui-theme-layout-auto .mdui-slider-discrete.mdui-slider-zero.mdui-slider-focus .mdui-slider-thumb {
+  .mdui-theme-layout-auto
+    .mdui-slider-discrete.mdui-slider-zero.mdui-slider-focus
+    .mdui-slider-thumb {
     background-color: #5c5c5c;
   }
-  .mdui-theme-layout-auto .mdui-slider-discrete.mdui-slider-zero.mdui-slider-disabled .mdui-slider-thumb {
+  .mdui-theme-layout-auto
+    .mdui-slider-discrete.mdui-slider-zero.mdui-slider-disabled
+    .mdui-slider-thumb {
     background-color: #4c4c4c;
   }
 }
@@ -3090,7 +3254,7 @@ body.mdui-locked {
   position: relative;
   display: inline-block;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   min-width: 88px;
   height: 36px;
   margin: 0;
@@ -3111,16 +3275,21 @@ body.mdui-locked {
   border-radius: 2px;
   outline: none;
   cursor: pointer;
-  -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   will-change: box-shadow;
   zoom: 1;
   -webkit-user-drag: none;
@@ -3160,21 +3329,27 @@ body.mdui-locked {
 }
 input.mdui-btn[type="submit"] {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 /* Raised button 浮动按钮 */
 .mdui-btn-raised {
-  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 .mdui-btn-raised:hover {
-  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .mdui-btn-raised:active {
-  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 /* 禁用按钮 */
 .mdui-btn[disabled],
@@ -3190,7 +3365,7 @@ input.mdui-btn[type="submit"] {
   cursor: default !important;
   opacity: 1 !important;
   -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
 }
 .mdui-btn[disabled] .mdui-icon,
 .mdui-fab[disabled] .mdui-icon,
@@ -3212,8 +3387,10 @@ input.mdui-btn[type="submit"] {
 .mdui-btn-raised[disabled]:focus,
 .mdui-fab[disabled]:focus {
   background-color: rgba(0, 0, 0, 0.12) !important;
-  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
-          box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
 }
 /* 加粗按钮文本 */
 .mdui-btn-bold {
@@ -3239,11 +3416,11 @@ input.mdui-btn[type="submit"] {
   width: 24px;
   line-height: 24px;
   -webkit-transform: translate(-12px, -12px);
-          transform: translate(-12px, -12px);
+  transform: translate(-12px, -12px);
 }
 .mdui-btn-icon.mdui-ripple {
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
 }
 /* 按钮 100% 宽度 */
 .mdui-btn-block {
@@ -3279,7 +3456,7 @@ input.mdui-btn[type="submit"] {
   bottom: 0;
   left: 0;
   border-left: 1px solid transparent;
-  content: ' ';
+  content: " ";
 }
 .mdui-btn-group .mdui-btn:first-child {
   border-top-left-radius: 2px;
@@ -3316,8 +3493,10 @@ input.mdui-btn[type="submit"] {
 .mdui-theme-layout-dark .mdui-fab[class*="mdui-color-"]:hover {
   opacity: 0.87;
 }
-.mdui-theme-layout-dark .mdui-btn:not(.mdui-ripple)[class*="mdui-color-"]:active,
-.mdui-theme-layout-dark .mdui-fab:not(.mdui-ripple)[class*="mdui-color-"]:active {
+.mdui-theme-layout-dark
+  .mdui-btn:not(.mdui-ripple)[class*="mdui-color-"]:active,
+.mdui-theme-layout-dark
+  .mdui-fab:not(.mdui-ripple)[class*="mdui-color-"]:active {
   opacity: 0.76;
 }
 .mdui-theme-layout-dark .mdui-btn[disabled],
@@ -3364,8 +3543,10 @@ input.mdui-btn[type="submit"] {
   .mdui-theme-layout-auto .mdui-fab[class*="mdui-color-"]:hover {
     opacity: 0.87;
   }
-  .mdui-theme-layout-auto .mdui-btn:not(.mdui-ripple)[class*="mdui-color-"]:active,
-  .mdui-theme-layout-auto .mdui-fab:not(.mdui-ripple)[class*="mdui-color-"]:active {
+  .mdui-theme-layout-auto
+    .mdui-btn:not(.mdui-ripple)[class*="mdui-color-"]:active,
+  .mdui-theme-layout-auto
+    .mdui-fab:not(.mdui-ripple)[class*="mdui-color-"]:active {
     opacity: 0.76;
   }
   .mdui-theme-layout-auto .mdui-btn[disabled],
@@ -3416,16 +3597,22 @@ input.mdui-btn[type="submit"] {
   font-size: 24px;
   line-height: normal !important;
   border-radius: 50%;
-  -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
 }
 .mdui-fab:hover {
-  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 .mdui-fab:active {
-  -webkit-box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+    0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2),
+    0 12px 17px 2px rgba(0, 0, 0, 0.14), 0 5px 22px 4px rgba(0, 0, 0, 0.12);
 }
 .mdui-fab .mdui-icon {
   position: absolute;
@@ -3479,7 +3666,7 @@ input.mdui-btn[type="submit"] {
 }
 .mdui-fab-wrapper > .mdui-fab .mdui-icon.mdui-fab-opened {
   -webkit-transform: rotate(225deg);
-          transform: rotate(225deg);
+  transform: rotate(225deg);
   opacity: 0;
   -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -3487,12 +3674,12 @@ input.mdui-btn[type="submit"] {
 }
 .mdui-fab-wrapper > .mdui-fab.mdui-fab-opened .mdui-icon:not(.mdui-fab-opened) {
   -webkit-transform: rotate(225deg);
-          transform: rotate(225deg);
+  transform: rotate(225deg);
   opacity: 0;
 }
 .mdui-fab-wrapper > .mdui-fab.mdui-fab-opened .mdui-icon.mdui-fab-opened {
   -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transform: rotate(360deg);
   opacity: 1;
 }
 .mdui-fab-wrapper > .mdui-fab-mini {
@@ -3510,16 +3697,30 @@ input.mdui-btn[type="submit"] {
 .mdui-fab-wrapper .mdui-fab-dial .mdui-fab {
   margin: 8px 0;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   opacity: 0;
-  -webkit-transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1), transform 150ms cubic-bezier(0.4, 0, 0.2, 1), opacity 150ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 150ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 150ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 150ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 150ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 150ms cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    -webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mdui-fab-wrapper .mdui-fab-dial.mdui-fab-dial-show .mdui-fab {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   opacity: 1;
 }
 /* 添加类 .mdui-fab-hide 以动画的形式隐藏按钮 */
@@ -3527,18 +3728,23 @@ input.mdui-btn[type="submit"] {
 .mdui-fab-mini,
 .mdui-fab-wrapper {
   -webkit-transform: scale(1) translateZ(0);
-          transform: scale(1) translateZ(0);
-  -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), -webkit-transform 0.2s;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), -webkit-transform 0.2s;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), transform 0.2s;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), transform 0.2s, -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), -webkit-transform 0.2s;
+  transform: scale(1) translateZ(0);
+  -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), -webkit-transform 0.2s;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), -webkit-transform 0.2s;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), transform 0.2s;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), transform 0.2s,
+    -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), -webkit-transform 0.2s;
   will-change: transform;
 }
 .mdui-fab.mdui-fab-hide,
 .mdui-fab-mini.mdui-fab-hide,
 .mdui-fab-wrapper.mdui-fab-hide {
   -webkit-transform: scale(0) translateZ(0);
-          transform: scale(0) translateZ(0);
+  transform: scale(0) translateZ(0);
 }
 /**
  * =============================================================================
@@ -3549,7 +3755,7 @@ input.mdui-btn[type="submit"] {
   position: relative;
   display: inline-block;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   max-width: 100%;
   height: 36px;
   padding-right: 24px;
@@ -3565,20 +3771,23 @@ input.mdui-btn[type="submit"] {
   outline: none;
   cursor: pointer;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  -webkit-transition-property: background-color, background-position-x, -webkit-box-shadow;
-  transition-property: background-color, background-position-x, -webkit-box-shadow;
+  transition-duration: 0.2s;
+  -webkit-transition-property: background-color, background-position-x,
+    -webkit-box-shadow;
+  transition-property: background-color, background-position-x,
+    -webkit-box-shadow;
   transition-property: background-color, box-shadow, background-position-x;
-  transition-property: background-color, box-shadow, background-position-x, -webkit-box-shadow;
+  transition-property: background-color, box-shadow, background-position-x,
+    -webkit-box-shadow;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   will-change: background-color, box-shadow, background-position-x;
 }
 .mdui-select.mdui-select-open {
@@ -3601,27 +3810,35 @@ input.mdui-btn[type="submit"] {
   border-bottom: 2px solid transparent;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  -webkit-box-shadow: 0 10px 10px -3px rgba(0, 0, 0, 0.2), 0 0 14px 1px rgba(0, 0, 0, 0.14), 0 -7px 24px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 10px 10px -3px rgba(0, 0, 0, 0.2), 0 0 14px 1px rgba(0, 0, 0, 0.14), 0 -7px 24px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 10px 10px -3px rgba(0, 0, 0, 0.2),
+    0 0 14px 1px rgba(0, 0, 0, 0.14), 0 -7px 24px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 10px 10px -3px rgba(0, 0, 0, 0.2),
+    0 0 14px 1px rgba(0, 0, 0, 0.14), 0 -7px 24px 2px rgba(0, 0, 0, 0.12);
 }
 .mdui-select-open.mdui-select-position-top .mdui-select-menu {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  -webkit-box-shadow: 0 -4px 4px -2px rgba(0, 0, 0, 0.06), 8px 0 8px -4px rgba(0, 0, 0, 0.12), -8px 0 8px -4px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 -4px 4px -2px rgba(0, 0, 0, 0.06), 8px 0 8px -4px rgba(0, 0, 0, 0.12), -8px 0 8px -4px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 -4px 4px -2px rgba(0, 0, 0, 0.06),
+    8px 0 8px -4px rgba(0, 0, 0, 0.12), -8px 0 8px -4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 -4px 4px -2px rgba(0, 0, 0, 0.06),
+    8px 0 8px -4px rgba(0, 0, 0, 0.12), -8px 0 8px -4px rgba(0, 0, 0, 0.12);
 }
 .mdui-select-open.mdui-select-position-bottom {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 .mdui-select-open.mdui-select-position-bottom .mdui-select-menu {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 9px 9px 1px rgba(0, 0, 0, 0.14), 0 8px 8px 2px rgba(0, 0, 0, 0.06);
-          box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 9px 9px 1px rgba(0, 0, 0, 0.14), 0 8px 8px 2px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 9px 9px 1px rgba(0, 0, 0, 0.14), 0 8px 8px 2px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 9px 9px 1px rgba(0, 0, 0, 0.14), 0 8px 8px 2px rgba(0, 0, 0, 0.06);
 }
 /* 当前选中项文本 */
 .mdui-select-selected {
@@ -3631,7 +3848,7 @@ input.mdui-btn[type="submit"] {
   left: 0;
   display: block;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-transition: left 0.2s cubic-bezier(0, 0, 0.2, 1);
   transition: left 0.2s cubic-bezier(0, 0, 0.2, 1);
   overflow: hidden;
@@ -3650,7 +3867,7 @@ input.mdui-btn[type="submit"] {
   position: relative;
   z-index: 99999;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 36px;
   margin: 0 -24px 0 0;
   overflow-y: scroll;
@@ -3658,36 +3875,38 @@ input.mdui-btn[type="submit"] {
   background-color: #fff;
   border-radius: 2px;
   -webkit-transform: scale(1, 0);
-          transform: scale(1, 0);
+  transform: scale(1, 0);
   visibility: hidden;
   cursor: default;
   opacity: 0;
   -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transition-property: opacity, visibility, -webkit-transform;
   transition-property: opacity, visibility, -webkit-transform;
   transition-property: transform, opacity, visibility;
   transition-property: transform, opacity, visibility, -webkit-transform;
   will-change: transform, opacity, visibility;
   -webkit-overflow-scrolling: touch;
-  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 .mdui-select-open .mdui-select-menu {
   overflow-y: hidden;
   -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+  transform: scale(1, 1);
   visibility: visible;
   opacity: 1;
 }
 .mdui-select-closing .mdui-select-menu {
   overflow-y: hidden;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+  transform: scale(1, 1);
   visibility: visible;
   opacity: 0;
 }
@@ -3702,7 +3921,7 @@ input.mdui-btn[type="submit"] {
   text-overflow: ellipsis;
 }
 .mdui-select-menu-item:hover {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 .mdui-select-menu-item:first-child {
   margin-top: 8px;
@@ -3718,7 +3937,7 @@ input.mdui-btn[type="submit"] {
   background-color: inherit !important;
 }
 .mdui-select-menu-item[selected] {
-  color: #FF4081;
+  color: #ff4081;
 }
 /* 原生 select 组件 */
 select.mdui-select {
@@ -3735,7 +3954,7 @@ select.mdui-select[multiple] {
   height: auto;
   padding: 0;
   font-size: 15px;
-  background-color: #FFF;
+  background-color: #fff;
   background-image: none;
   border: 1px solid rgba(0, 0, 0, 0.38);
   cursor: default;
@@ -3757,8 +3976,8 @@ select.mdui-select[multiple] option {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 32px;
   margin: 0 0 0 -16px;
   padding: 0 16px;
@@ -3776,7 +3995,7 @@ select.mdui-select[multiple] option:last-child {
  * =============================================================================
  */
 .mdui-theme-accent-pink .mdui-select-menu-item[selected] {
-  color: #E91E63;
+  color: #e91e63;
 }
 /**
  * =============================================================================
@@ -3811,11 +4030,11 @@ select.mdui-select[multiple] option:last-child {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 .mdui-theme-layout-dark select.mdui-select {
-  color: #FFF;
+  color: #fff;
   background-color: #303030;
 }
 .mdui-theme-layout-dark select.mdui-select option {
-  color: #FFF;
+  color: #fff;
   background-color: #303030;
 }
 .mdui-theme-layout-dark select.mdui-select[multiple] {
@@ -3824,7 +4043,9 @@ select.mdui-select[multiple] option:last-child {
 .mdui-theme-layout-dark select.mdui-select[multiple] optgroup {
   color: rgba(255, 255, 255, 0.5);
 }
-.mdui-theme-layout-dark select.mdui-select[multiple] optgroup:not(:first-child) {
+.mdui-theme-layout-dark
+  select.mdui-select[multiple]
+  optgroup:not(:first-child) {
   border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 @media (prefers-color-scheme: dark) {
@@ -3856,11 +4077,11 @@ select.mdui-select[multiple] option:last-child {
     color: rgba(255, 255, 255, 0.5) !important;
   }
   .mdui-theme-layout-auto select.mdui-select {
-    color: #FFF;
+    color: #fff;
     background-color: #303030;
   }
   .mdui-theme-layout-auto select.mdui-select option {
-    color: #FFF;
+    color: #fff;
     background-color: #303030;
   }
   .mdui-theme-layout-auto select.mdui-select[multiple] {
@@ -3869,7 +4090,9 @@ select.mdui-select[multiple] option:last-child {
   .mdui-theme-layout-auto select.mdui-select[multiple] optgroup {
     color: rgba(255, 255, 255, 0.5);
   }
-  .mdui-theme-layout-auto select.mdui-select[multiple] optgroup:not(:first-child) {
+  .mdui-theme-layout-auto
+    select.mdui-select[multiple]
+    optgroup:not(:first-child) {
     border-top: 1px solid rgba(255, 255, 255, 0.12);
   }
 }
@@ -3883,10 +4106,10 @@ select.mdui-select[multiple] option:last-child {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
 }
 .mdui-toolbar > * {
@@ -3895,19 +4118,21 @@ select.mdui-select[multiple] option:last-child {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.mdui-toolbar[class*="mdui-color-"]:not(.mdui-color-transparent) .mdui-btn:hover {
+.mdui-toolbar[class*="mdui-color-"]:not(.mdui-color-transparent)
+  .mdui-btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.mdui-toolbar[class*="mdui-color-"]:not(.mdui-color-transparent) .mdui-btn:active {
+.mdui-toolbar[class*="mdui-color-"]:not(.mdui-color-transparent)
+  .mdui-btn:active {
   background-color: rgba(255, 255, 255, 0.165);
 }
 .mdui-toolbar > a {
   color: inherit;
   text-decoration: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .mdui-toolbar > .mdui-btn-icon {
   width: 48px;
@@ -3930,8 +4155,8 @@ select.mdui-select[multiple] option:last-child {
 }
 .mdui-toolbar-spacer {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   margin: 0;
 }
 /* 手机 */
@@ -3976,8 +4201,10 @@ select.mdui-select[multiple] option:last-child {
  */
 .mdui-appbar {
   z-index: 1000;
-  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+    0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 /* appbar 固定在顶部 */
 .mdui-appbar-fixed {
@@ -3986,9 +4213,9 @@ select.mdui-select[multiple] option:last-child {
   right: 0;
   left: 0;
   -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-property: left, right;
   transition-property: left, right;
   will-change: left, right;
@@ -4059,12 +4286,16 @@ select.mdui-select[multiple] option:last-child {
  * ************   Appbar dark   ************
  * =============================================================================
  */
-.mdui-theme-layout-dark .mdui-appbar > [class*="mdui-color-"]:not(.mdui-color-transparent) {
+.mdui-theme-layout-dark
+  .mdui-appbar
+  > [class*="mdui-color-"]:not(.mdui-color-transparent) {
   color: #fff !important;
   background-color: #212121 !important;
 }
 @media (prefers-color-scheme: dark) {
-  .mdui-theme-layout-auto .mdui-appbar > [class*="mdui-color-"]:not(.mdui-color-transparent) {
+  .mdui-theme-layout-auto
+    .mdui-appbar
+    > [class*="mdui-color-"]:not(.mdui-color-transparent) {
     color: #fff !important;
     background-color: #212121 !important;
   }
@@ -4096,20 +4327,20 @@ select.mdui-select[multiple] option:last-child {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   min-width: 72px;
   min-height: 48px;
   max-height: 72px;
@@ -4125,9 +4356,9 @@ select.mdui-select[multiple] option:last-child {
   cursor: pointer;
   opacity: 0.7;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .mdui-tab a .mdui-icon {
   opacity: 0.7;
@@ -4135,8 +4366,8 @@ select.mdui-select[multiple] option:last-child {
 @media (min-width: 600px) {
   .mdui-tab a {
     -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     min-width: 99px;
     max-width: 264px;
     padding: 12px 24px;
@@ -4173,7 +4404,7 @@ select.mdui-select[multiple] option:last-child {
   cursor: default;
 }
 .mdui-tab .mdui-tab-active {
-  color: #3F51B5;
+  color: #3f51b5;
   opacity: 1;
 }
 .mdui-tab .mdui-tab-active .mdui-icon {
@@ -4183,27 +4414,27 @@ select.mdui-select[multiple] option:last-child {
 @media (min-width: 600px) {
   .mdui-tab-centered::before {
     -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    content: ' ';
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    content: " ";
   }
   .mdui-tab-centered::after {
     -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    content: ' ';
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    content: " ";
   }
   .mdui-tab-centered a {
     -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
   }
 }
 /* 选项卡始终全宽等分 */
 .mdui-tab-full-width a {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   max-width: none;
 }
 /* 可横向滚动的选项卡 */
@@ -4212,8 +4443,8 @@ select.mdui-select[multiple] option:last-child {
 }
 .mdui-tab-scrollable a {
   -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  -ms-flex: none;
+  flex: none;
 }
 @media (max-width: 599.9px) {
   .mdui-tab-scrollable {
@@ -4225,7 +4456,7 @@ select.mdui-select[multiple] option:last-child {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #3F51B5;
+  background-color: #3f51b5;
   -webkit-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: left, width;
@@ -4240,7 +4471,7 @@ select.mdui-select[multiple] option:last-child {
   color: inherit;
 }
 .mdui-tab[class*="mdui-color-"]:not(.mdui-color-white) .mdui-tab-indicator {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .mdui-tab[class*="mdui-color-"]:not(.mdui-color-white)::-webkit-scrollbar {
   width: 5px;
@@ -4267,7 +4498,7 @@ select.mdui-select[multiple] option:last-child {
 .mdui-subheader-inset {
   position: relative;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 48px;
   padding-right: 16px;
   padding-left: 16px;
@@ -4320,7 +4551,7 @@ select.mdui-select[multiple] option:last-child {
 .mdui-grid-tile {
   position: relative;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-bottom: 4px;
   overflow: hidden;
 }
@@ -4338,10 +4569,10 @@ select.mdui-select[multiple] option:last-child {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   min-height: 48px;
   max-height: 68px;
   padding: 16px;
@@ -4354,8 +4585,8 @@ select.mdui-select[multiple] option:last-child {
 /* 操作栏内的文本 */
 .mdui-grid-tile-text {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   overflow: hidden;
 }
 /* 标题 */
@@ -4387,8 +4618,8 @@ select.mdui-select[multiple] option:last-child {
 /* 操作栏内的按钮 */
 .mdui-grid-tile-buttons {
   -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  -ms-flex: none;
+  flex: none;
   margin: -8px;
   white-space: nowrap;
 }
@@ -4415,11 +4646,23 @@ select.mdui-select[multiple] option:last-child {
 }
 /* 操作栏背景渐变 */
 .mdui-grid-tile-actions-gradient {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0)));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(0, 0, 0, 0.26)),
+    to(rgba(0, 0, 0, 0))
+  );
   background: linear-gradient(to top, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0));
 }
 .mdui-grid-tile-actions-gradient.mdui-grid-tile-actions-top {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.26)), to(rgba(0, 0, 0, 0)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0.26)),
+    to(rgba(0, 0, 0, 0))
+  );
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0));
 }
 /**
@@ -4462,7 +4705,7 @@ select.mdui-select[multiple] option:last-child {
   display: block;
   height: 1px;
   background-color: rgba(0, 0, 0, 0.12);
-  content: ' ';
+  content: " ";
 }
 .mdui-list .mdui-subheader:first-child,
 .mdui-list .mdui-subheader-inset:first-child {
@@ -4481,10 +4724,10 @@ select.mdui-select[multiple] option:last-child {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   min-height: 48px;
   padding: 0 16px;
   text-decoration: none;
@@ -4498,7 +4741,7 @@ select.mdui-select[multiple] option:last-child {
 .mdui-list-item::after {
   height: 48px;
   visibility: hidden;
-  content: ' ';
+  content: " ";
 }
 /* 列表项图标 */
 .mdui-list-item-icon {
@@ -4514,10 +4757,10 @@ select.mdui-select[multiple] option:last-child {
   height: 40px;
   margin-top: 8px;
   margin-bottom: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 40px;
   text-align: center;
-  background-color: #BDBDBD;
+  background-color: #bdbdbd;
   border-radius: 50%;
 }
 .mdui-list-item-avatar img {
@@ -4528,8 +4771,8 @@ select.mdui-select[multiple] option:last-child {
 /* 列表项内容 */
 .mdui-list-item-content {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   padding-top: 14px;
   padding-bottom: 14px;
   font-weight: 400;
@@ -4748,7 +4991,7 @@ body.mdui-loaded .mdui-drawer {
   left: 0;
   z-index: 5000;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* stylelint-disable-next-line */
   width: calc(100% - 56px);
   max-width: 280px;
@@ -4762,7 +5005,7 @@ body.mdui-loaded .mdui-drawer {
 @media (max-width: 1023.9px) {
   .mdui-drawer:not(.mdui-drawer-open) {
     -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
   }
 }
 @media (min-width: 600px) {
@@ -4779,7 +5022,7 @@ body.mdui-loaded .mdui-drawer {
   }
   .mdui-drawer.mdui-drawer-close {
     -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
   }
 }
 /* 出现在右侧的抽屉栏 */
@@ -4794,60 +5037,62 @@ body.mdui-loaded .mdui-drawer {
     background-color: #fff;
     /* 默认隐藏 */
     -webkit-transform: translateX(-330px);
-            transform: translateX(-330px);
-    -webkit-box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2), 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12);
-            box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2), 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12);
+    transform: translateX(-330px);
+    -webkit-box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2),
+      0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2),
+      0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12);
   }
   .mdui-drawer-right {
     /* 右侧 drawer 也默认隐藏 */
     -webkit-transform: translateX(330px);
-            transform: translateX(330px);
+    transform: translateX(330px);
   }
 }
 /* 手机上的样式 */
 @media (max-width: 599.9px) {
   .mdui-drawer {
     -webkit-transform: translateX(-290px);
-            transform: translateX(-290px);
+    transform: translateX(-290px);
   }
   .mdui-drawer-right {
     -webkit-transform: translateX(290px);
-            transform: translateX(290px);
+    transform: translateX(290px);
   }
 }
 /* 强制隐藏抽屉栏 */
 .mdui-drawer-close {
   -webkit-transform: translateX(-290px);
-          transform: translateX(-290px);
+  transform: translateX(-290px);
 }
 .mdui-drawer-close.mdui-drawer-right {
   -webkit-transform: translateX(290px);
-          transform: translateX(290px);
+  transform: translateX(290px);
 }
 @media (min-width: 600px) {
   .mdui-drawer-close {
     -webkit-transform: translateX(-330px);
-            transform: translateX(-330px);
+    transform: translateX(-330px);
   }
   .mdui-drawer-close.mdui-drawer-right {
     -webkit-transform: translateX(330px);
-            transform: translateX(330px);
+    transform: translateX(330px);
   }
 }
 @media (min-width: 1024px) {
   .mdui-drawer-close {
     -webkit-transform: translateX(-250px);
-            transform: translateX(-250px);
+    transform: translateX(-250px);
   }
   .mdui-drawer-close.mdui-drawer-right {
     -webkit-transform: translateX(250px);
-            transform: translateX(250px);
+    transform: translateX(250px);
   }
 }
 /* 强制显示抽屉栏 */
 .mdui-drawer-open {
   -webkit-transform: translateX(0) !important;
-          transform: translateX(0) !important;
+  transform: translateX(0) !important;
 }
 /* PC 上的样式 */
 @media (min-width: 1024px) {
@@ -4877,8 +5122,10 @@ body.mdui-loaded .mdui-drawer {
 }
 /* 抽屉栏不是透明时添加阴影 */
 .mdui-drawer[class*="mdui-color-"]:not(.mdui-color-transparent) {
-  -webkit-box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2), 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2), 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2),
+    0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2),
+    0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12);
 }
 /* 抽屉栏 100% 高度，覆盖在导航栏上面 */
 .mdui-drawer-full-height {
@@ -4911,7 +5158,7 @@ body.mdui-loaded .mdui-drawer {
   z-index: 6000;
   display: none;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 92%;
   min-width: 180px;
   max-width: 728px;
@@ -4922,17 +5169,19 @@ body.mdui-loaded .mdui-drawer {
   background-color: #fff;
   border-radius: 2px;
   -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  transform: scale(0.95);
   opacity: 0;
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-property: opacity, visibility, -webkit-transform;
   transition-property: opacity, visibility, -webkit-transform;
   transition-property: transform, opacity, visibility;
   transition-property: transform, opacity, visibility, -webkit-transform;
   will-change: top, opacity, transform;
-  -webkit-box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
 }
 @media (min-width: 600px) {
   .mdui-dialog {
@@ -4949,13 +5198,13 @@ body.mdui-loaded .mdui-drawer {
 /* 打开提示框 */
 .mdui-dialog-open {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   opacity: 1;
 }
 /* 提示框标题 */
 .mdui-dialog-title {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -4968,7 +5217,7 @@ body.mdui-loaded .mdui-drawer {
 /* 提示框内容 */
 .mdui-dialog-content {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 24px;
   overflow-y: auto;
   color: rgba(0, 0, 0, 0.7);
@@ -4986,14 +5235,14 @@ body.mdui-loaded .mdui-drawer {
 /* 提示框底部按钮 */
 .mdui-dialog-actions {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 8px;
   text-align: right;
 }
 .mdui-dialog-actions .mdui-btn {
   min-width: 64px;
   margin-left: 8px;
-  color: #E91E63;
+  color: #e91e63;
 }
 .mdui-dialog-actions .mdui-btn:first-child {
   margin-left: 0;
@@ -5021,7 +5270,7 @@ body.mdui-loaded .mdui-drawer {
  * =============================================================================
  */
 .mdui-theme-accent-pink .mdui-dialog-actions .mdui-btn {
-  color: #E91E63;
+  color: #e91e63;
 }
 /**
  * =============================================================================
@@ -5073,6 +5322,55 @@ body.mdui-loaded .mdui-drawer {
 }
 /**
  * =============================================================================
+ * ************   Tooltip 工具提示   ************
+ * =============================================================================
+ */
+.mdui-tooltip {
+  position: absolute;
+  z-index: 9000;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 180px;
+  min-height: 32px;
+  padding: 8px 16px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  background-color: rgba(97, 97, 97, 0.9);
+  border-radius: 2px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  will-change: opacity, transform;
+}
+@media (min-width: 1024px) {
+  .mdui-tooltip {
+    max-width: 200px;
+    min-height: 24px;
+    padding: 4px 8px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+/* 显示工具提示 */
+.mdui-tooltip-open {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+/**
+ * =============================================================================
  * ************   Snackbar   ************
  * =============================================================================
  */
@@ -5083,13 +5381,13 @@ body.mdui-loaded .mdui-drawer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   min-height: 48px;
   padding: 0 24px 0 24px;
@@ -5116,7 +5414,8 @@ body.mdui-loaded .mdui-drawer {
   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* 位置 */
 .mdui-snackbar-bottom,
@@ -5163,7 +5462,7 @@ body.mdui-loaded .mdui-drawer {
 .mdui-snackbar-action {
   margin-right: -16px;
   white-space: nowrap;
-  color: #FF80AB;
+  color: #ff80ab;
 }
 /**
  * =============================================================================
@@ -5171,7 +5470,7 @@ body.mdui-loaded .mdui-drawer {
  * =============================================================================
  */
 .mdui-theme-accent-pink .mdui-snackbar-action {
-  color: #FF80AB;
+  color: #ff80ab;
 }
 /**
  * =============================================================================
@@ -5194,7 +5493,7 @@ body.mdui-loaded .mdui-drawer {
 .mdui-chip {
   display: inline-block;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 32px;
   margin: 2px 0;
   color: inherit;
@@ -5203,19 +5502,22 @@ body.mdui-loaded .mdui-drawer {
   border-radius: 16px;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: box-shadow;
 }
 .mdui-chip:hover,
 .mdui-chip:focus {
-  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 .mdui-chip:active {
   background-color: #d6d6d6;
@@ -5304,116 +5606,142 @@ body.mdui-loaded .mdui-drawer {
   width: 28px;
   height: 28px;
   -webkit-animation: mdui-spinner 1568ms linear infinite;
-          animation: mdui-spinner 1568ms linear infinite;
+  animation: mdui-spinner 1568ms linear infinite;
 }
 @-webkit-keyframes mdui-spinner {
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes mdui-spinner {
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 .mdui-spinner-layer {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-color: #3F51B5;
+  border-color: #3f51b5;
   opacity: 0;
   opacity: 1;
-  -webkit-animation: mdui-spinner-layer-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-          animation: mdui-spinner-layer-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  -webkit-animation: mdui-spinner-layer-fill-unfill-rotate 5332ms
+    cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  animation: mdui-spinner-layer-fill-unfill-rotate 5332ms
+    cubic-bezier(0.4, 0, 0.2, 1) infinite both;
 }
 .mdui-spinner-layer-1 {
-  border-color: #42A5F5 !important;
-  -webkit-animation: mdui-spinner-layer-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdui-spinner-layer-1-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-          animation: mdui-spinner-layer-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdui-spinner-layer-1-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  border-color: #42a5f5 !important;
+  -webkit-animation: mdui-spinner-layer-fill-unfill-rotate 5332ms
+      cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    mdui-spinner-layer-1-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1)
+      infinite both;
+  animation: mdui-spinner-layer-fill-unfill-rotate 5332ms
+      cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    mdui-spinner-layer-1-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1)
+      infinite both;
 }
 .mdui-spinner-layer-2 {
-  border-color: #F44336 !important;
-  -webkit-animation: mdui-spinner-layer-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdui-spinner-layer-2-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-          animation: mdui-spinner-layer-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdui-spinner-layer-2-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  border-color: #f44336 !important;
+  -webkit-animation: mdui-spinner-layer-fill-unfill-rotate 5332ms
+      cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    mdui-spinner-layer-2-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1)
+      infinite both;
+  animation: mdui-spinner-layer-fill-unfill-rotate 5332ms
+      cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    mdui-spinner-layer-2-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1)
+      infinite both;
 }
 .mdui-spinner-layer-3 {
-  border-color: #FDD835 !important;
-  -webkit-animation: mdui-spinner-layer-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdui-spinner-layer-3-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-          animation: mdui-spinner-layer-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdui-spinner-layer-3-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  border-color: #fdd835 !important;
+  -webkit-animation: mdui-spinner-layer-fill-unfill-rotate 5332ms
+      cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    mdui-spinner-layer-3-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1)
+      infinite both;
+  animation: mdui-spinner-layer-fill-unfill-rotate 5332ms
+      cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    mdui-spinner-layer-3-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1)
+      infinite both;
 }
 .mdui-spinner-layer-4 {
-  border-color: #4CAF50 !important;
-  -webkit-animation: mdui-spinner-layer-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdui-spinner-layer-4-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-          animation: mdui-spinner-layer-fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdui-spinner-layer-4-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  border-color: #4caf50 !important;
+  -webkit-animation: mdui-spinner-layer-fill-unfill-rotate 5332ms
+      cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    mdui-spinner-layer-4-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1)
+      infinite both;
+  animation: mdui-spinner-layer-fill-unfill-rotate 5332ms
+      cubic-bezier(0.4, 0, 0.2, 1) infinite both,
+    mdui-spinner-layer-4-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1)
+      infinite both;
 }
 @-webkit-keyframes mdui-spinner-layer-fill-unfill-rotate {
   12.5% {
     -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
+    transform: rotate(135deg);
   }
   25% {
     -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+    transform: rotate(270deg);
   }
   37.5% {
     -webkit-transform: rotate(405deg);
-            transform: rotate(405deg);
+    transform: rotate(405deg);
   }
   50% {
     -webkit-transform: rotate(540deg);
-            transform: rotate(540deg);
+    transform: rotate(540deg);
   }
   62.5% {
     -webkit-transform: rotate(675deg);
-            transform: rotate(675deg);
+    transform: rotate(675deg);
   }
   75% {
     -webkit-transform: rotate(810deg);
-            transform: rotate(810deg);
+    transform: rotate(810deg);
   }
   87.5% {
     -webkit-transform: rotate(945deg);
-            transform: rotate(945deg);
+    transform: rotate(945deg);
   }
   to {
     -webkit-transform: rotate(1080deg);
-            transform: rotate(1080deg);
+    transform: rotate(1080deg);
   }
 }
 @keyframes mdui-spinner-layer-fill-unfill-rotate {
   12.5% {
     -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
+    transform: rotate(135deg);
   }
   25% {
     -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+    transform: rotate(270deg);
   }
   37.5% {
     -webkit-transform: rotate(405deg);
-            transform: rotate(405deg);
+    transform: rotate(405deg);
   }
   50% {
     -webkit-transform: rotate(540deg);
-            transform: rotate(540deg);
+    transform: rotate(540deg);
   }
   62.5% {
     -webkit-transform: rotate(675deg);
-            transform: rotate(675deg);
+    transform: rotate(675deg);
   }
   75% {
     -webkit-transform: rotate(810deg);
-            transform: rotate(810deg);
+    transform: rotate(810deg);
   }
   87.5% {
     -webkit-transform: rotate(945deg);
-            transform: rotate(945deg);
+    transform: rotate(945deg);
   }
   to {
     -webkit-transform: rotate(1080deg);
-            transform: rotate(1080deg);
+    transform: rotate(1080deg);
   }
 }
 @-webkit-keyframes mdui-spinner-layer-1-fade-in-out {
@@ -5570,7 +5898,7 @@ body.mdui-loaded .mdui-drawer {
 .mdui-spinner-gap-patch .mdui-spinner-circle {
   left: -450%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 1000%;
 }
 .mdui-spinner-circle-clipper {
@@ -5587,7 +5915,7 @@ body.mdui-loaded .mdui-drawer {
   right: 0;
   bottom: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 200%;
   height: 100%;
   border-color: inherit;
@@ -5596,7 +5924,7 @@ body.mdui-loaded .mdui-drawer {
   border-bottom-color: transparent !important;
   border-radius: 50%;
   -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
 .mdui-spinner-circle-clipper.mdui-spinner-left {
   float: left;
@@ -5605,9 +5933,11 @@ body.mdui-loaded .mdui-drawer {
   left: 0;
   border-right-color: transparent !important;
   -webkit-transform: rotate(129deg);
-          transform: rotate(129deg);
-  -webkit-animation: mdui-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-          animation: mdui-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  transform: rotate(129deg);
+  -webkit-animation: mdui-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1)
+    infinite both;
+  animation: mdui-spinner-left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite
+    both;
 }
 .mdui-spinner-circle-clipper.mdui-spinner-right {
   float: right;
@@ -5616,64 +5946,66 @@ body.mdui-loaded .mdui-drawer {
   left: -100%;
   border-left-color: transparent !important;
   -webkit-transform: rotate(-129deg);
-          transform: rotate(-129deg);
-  -webkit-animation: mdui-spinner-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
-          animation: mdui-spinner-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+  transform: rotate(-129deg);
+  -webkit-animation: mdui-spinner-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1)
+    infinite both;
+  animation: mdui-spinner-right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1)
+    infinite both;
 }
 @-webkit-keyframes mdui-spinner-left-spin {
   from {
     -webkit-transform: rotate(130deg);
-            transform: rotate(130deg);
+    transform: rotate(130deg);
   }
   50% {
     -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
+    transform: rotate(-5deg);
   }
   to {
     -webkit-transform: rotate(130deg);
-            transform: rotate(130deg);
+    transform: rotate(130deg);
   }
 }
 @keyframes mdui-spinner-left-spin {
   from {
     -webkit-transform: rotate(130deg);
-            transform: rotate(130deg);
+    transform: rotate(130deg);
   }
   50% {
     -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
+    transform: rotate(-5deg);
   }
   to {
     -webkit-transform: rotate(130deg);
-            transform: rotate(130deg);
+    transform: rotate(130deg);
   }
 }
 @-webkit-keyframes mdui-spinner-right-spin {
   from {
     -webkit-transform: rotate(-130deg);
-            transform: rotate(-130deg);
+    transform: rotate(-130deg);
   }
   50% {
     -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
+    transform: rotate(5deg);
   }
   to {
     -webkit-transform: rotate(-130deg);
-            transform: rotate(-130deg);
+    transform: rotate(-130deg);
   }
 }
 @keyframes mdui-spinner-right-spin {
   from {
     -webkit-transform: rotate(-130deg);
-            transform: rotate(-130deg);
+    transform: rotate(-130deg);
   }
   50% {
     -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
+    transform: rotate(5deg);
   }
   to {
     -webkit-transform: rotate(-130deg);
-            transform: rotate(-130deg);
+    transform: rotate(-130deg);
   }
 }
 /**
@@ -5692,7 +6024,7 @@ body.mdui-loaded .mdui-drawer {
   z-index: 99999;
   display: block;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 168px;
   margin: 0;
   padding: 8px 0;
@@ -5703,21 +6035,23 @@ body.mdui-loaded .mdui-drawer {
   background-color: #fff;
   border-radius: 2px;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   visibility: hidden;
   opacity: 0;
   -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-property: opacity, visibility, -webkit-transform;
   transition-property: opacity, visibility, -webkit-transform;
   transition-property: transform, opacity, visibility;
   transition-property: transform, opacity, visibility, -webkit-transform;
   will-change: transform, opacity, visibility;
   -webkit-overflow-scrolling: touch;
-  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 .mdui-menu .mdui-divider {
   margin-top: 8px;
@@ -5726,14 +6060,14 @@ body.mdui-loaded .mdui-drawer {
 /* 打开状态的菜单 */
 .mdui-menu-open {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   visibility: visible;
   opacity: 1;
 }
 /* 关闭中的菜单 */
 .mdui-menu-closing {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   visibility: visible;
   opacity: 0;
 }
@@ -5750,20 +6084,22 @@ body.mdui-loaded .mdui-drawer {
   line-height: 48px;
   text-decoration: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .mdui-menu-item > a:hover {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 .mdui-menu-item > .mdui-menu {
   position: absolute;
-  -webkit-box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2), 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2), 0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2),
+    0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.2),
+    0 9px 12px 1px rgba(0, 0, 0, 0.14), 0 3px 16px 2px rgba(0, 0, 0, 0.12);
 }
 .mdui-menu-item[disabled] > a {
   color: rgba(0, 0, 0, 0.38) !important;
@@ -5777,13 +6113,13 @@ body.mdui-loaded .mdui-drawer {
 }
 /* 激活状态的菜单项 */
 .mdui-menu-item-active {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 /* 菜单中的图标 */
 .mdui-menu-item-icon {
   display: inline-block;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 40px;
   padding-right: 16px;
   color: rgba(0, 0, 0, 0.54);

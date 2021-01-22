@@ -57,7 +57,6 @@ footer a {
   .mdui-col-xs-12 {
     width: 100%;
   }
-
 }
 
 @media (max-width: 1024px) {
@@ -91,6 +90,16 @@ footer a {
   display: none;
 }
 
-.mdui-theme-layout-dark .hljs-keyword, .hljs-selector-tag{
-  color:#dadada !important;
+.mdui-theme-layout-dark .hljs-keyword,
+.hljs-selector-tag {
+  color: #dadada !important;
+}
+
+html *::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+  border-radius: 4px;
+}
+html ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
 }
