@@ -1,2 +1,2 @@
-import mdui from 'mdui';
+import mdui from "mdui";
 export default mdui;

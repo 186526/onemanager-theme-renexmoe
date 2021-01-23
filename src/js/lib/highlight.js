@@ -177,23 +177,8 @@ hljs.registerLanguage(
   "properties",
   require("highlight.js/lib/languages/properties")
 );
-hljs.registerLanguage(
-  "purebasic",
-  require("highlight.js/lib/languages/purebasic")
-);
 hljs.registerLanguage("python", require("highlight.js/lib/languages/python"));
-hljs.registerLanguage(
-  "python-repl",
-  require("highlight.js/lib/languages/python-repl")
-);
-hljs.registerLanguage("q", require("highlight.js/lib/languages/q"));
-hljs.registerLanguage("qml", require("highlight.js/lib/languages/qml"));
 hljs.registerLanguage("r", require("highlight.js/lib/languages/r"));
-hljs.registerLanguage(
-  "reasonml",
-  require("highlight.js/lib/languages/reasonml")
-);
-hljs.registerLanguage("rib", require("highlight.js/lib/languages/rib"));
 hljs.registerLanguage(
   "roboconf",
   require("highlight.js/lib/languages/roboconf")

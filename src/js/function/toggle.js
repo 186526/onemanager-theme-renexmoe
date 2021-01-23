@@ -33,6 +33,11 @@ export default () => {
       window.history.back();
     });
   });
+  $(".back-page").each((a, b) => {
+    b.addEventListener("click", () => {
+      globalThis.renexmoe.pjax.loadUrl("../");
+    });
+  });
   $(".refresh").each((a, b) => {
     b.addEventListener("click", () => {
       mdui.snackbar("刷新缓存中……");

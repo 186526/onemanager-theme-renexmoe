@@ -1,5 +1,5 @@
 /*!
- * renexmoe v1.1.4.2 (https://github.com/186526/onemanager-theme-renexmoe)
+ * renexmoe v1.1.5 (https://github.com/186526/onemanager-theme-renexmoe)
  * Copyright 2020-2021 186526 <i@186526.xyz>
  * Licensed under GPL-3.0
  */
@@ -17,21 +17,24 @@ import marked from "./function/marked.js";
 import flyingPages from "./lib/flyingpages.js";
 import highlight from "./function/code.js";
 import pack from './pack.js';
+import ActiveDisk from './function/activedisk';
 globalThis.mdui = mdui;
 globalThis.renexmoe = {
   toggle_theme: theme.toggle,
   mutation: () => {
-    console.log(`renexmoe - pjax - Init Page`);
-    console.log(`renexmoe - marked - Update Marked`);
+    ActiveDisk();
+    console.log(`renexmoe::pjax::Page Load Success`);
+    console.log(`renexmoe::marked::Update Marked`);
     marked();
-    console.log(`renexmoe - mdui - Update Theme`);
+    console.log(`renexmoe::mdui::Init Theme`);
     theme.mutation();
-    console.log(`renexmoe - sort - Init Sort`);
+    console.log(`renexmoe::sort::Init Sort`);
     sort();
     mdui.mutation();
-    console.log(`renexmoe - init - Start EventLister`);
+    console.log(`renexmoe::init::Start EventLister`);
     toggle();
     highlight();
+    console.log(`renexmoe::init::FlyingPages Preload`);
     flyingPages();
   },
   pjax: pjax(),
@@ -40,12 +43,12 @@ globalThis.renexmoe = {
 };
 mdui.$(() => {
   console.log("\n %c OneManager-theme-renexmoe | Powered by OneManager-php && Webpack | 186526 \n", "color: #fff; background: #444; padding:5px 0;");
-  console.log(`renexmoe - init - Start Load`);
-  console.log(`renexmoe - init - Start EventLister`);
+  console.log(`renexmoe::init::Start Load`);
+  console.log(`renexmoe::init::Start EventLister`);
   menu();
   drawertoggle();
-  console.log(`renexmoe - init - Start FlyingPages`);
-  console.log(`renexmoe - init - Init MDUI`);
+  console.log(`renexmoe::init::Start FlyingPages`);
+  console.log(`renexmoe::init::Init MDUI`);
   window.renexmoe.mutation();
   document.addEventListener("pjax:success", window.renexmoe.mutation);
 });

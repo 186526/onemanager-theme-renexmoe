@@ -48,7 +48,7 @@ function flyingPages() {
       link.href = geturl(url);
       link.onload = resolve;
       link.onerror = reject;
-      console.log(`renexmoe - FlyingPages - Preload ${link.href}`);
+      console.log(`renexmoe::FlyingPages::Preload ${link.href}`);
       document.head.appendChild(link);
     });
 
