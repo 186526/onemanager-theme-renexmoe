@@ -16,24 +16,28 @@ export async function click() {
   mdui.mutation();
   const answer = await check();
   o.close();
-  new mdui.alert(
-    `
-        <div class="mdui-typo">
-        本版本日志: ${answer.log}
-            <h5>主线版本</h5>
-            <ul>
-                <li>版本: ${answer.version.main.ver}</li>
-                <li>主题链接: <a href="${answer.version.main.url}">This</a></li>
-                <li>LOG: ${answer.version.main.log}</li>
-            </ul>
-            <h5>LTS版本</h5>
-            <ul>
-                <li>版本: ${answer.version.lts.ver}</li>
-                <li>主题链接: <a href="${answer.version.lts.url}">This</a></li>
-                <li>LOG: ${answer.version.lts.log}</li>
-            </ul>
-        </div>
-        `,
-    `当前版本是 ${json.version}-${MODE}-${json.builder},${answer.status}`
-  );
+  try{
+    new mdui.alert(
+      `
+          <div class="mdui-typo">
+          本版本日志: ${answer.log}
+              <h5>主线版本</h5>
+              <ul>
+                  <li>版本: ${answer.version.main.ver}</li>
+                  <li>主题链接: <a href="${answer.version.main.url}">This</a></li>
+                  <li>LOG: ${answer.version.main.log}</li>
+              </ul>
+              <h5>LTS版本</h5>
+              <ul>
+                  <li>版本: ${answer.version.lts.ver}</li>
+                  <li>主题链接: <a href="${answer.version.lts.url}">This</a></li>
+                  <li>LOG: ${answer.version.lts.log}</li>
+              </ul>
+          </div>
+          `,
+      `当前版本是 ${json.version}-${MODE}-${json.builder},${answer.status}`
+    );  
+  }catch(e){
+    new mdui.alert(`<div class="mdui-typo">Error: ${e}</div>`,'检查更新遇到未知错误');
+  }
 }

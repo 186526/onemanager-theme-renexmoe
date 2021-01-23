@@ -1,12 +1,12 @@
 /*!
- * renexmoe v1.1.4 (https://github.com/186526/onemanager-theme-renexmoe)
+ * renexmoe v1.1.4.2 (https://github.com/186526/onemanager-theme-renexmoe)
  * Copyright 2020-2021 186526 <i@186526.xyz>
  * Licensed under GPL-3.0
  */
 import "../css/notosans.css";
 import "../css/mdui.css";
 import "../css/app.css";
-import mdui from "mdui";
+import mdui from "./lib/mdui";
 import pjax from "./function/pjax.js";
 import theme from "./theme.js";
 import toggle from "./function/toggle.js";

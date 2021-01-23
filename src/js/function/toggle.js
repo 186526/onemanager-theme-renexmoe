@@ -1,4 +1,4 @@
-import mdui from "mdui";
+import mdui from "../lib/mdui";
 import { refresh, logout } from "../utils";
 import { click } from "./checkupdate";
 import { ToggleListener }from "./menu.js";

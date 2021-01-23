@@ -64,13 +64,11 @@
   <div class="mdui-toolbar">
   <span
     class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
-    mdui-tooltip="{content: '菜单'}"
     onclick='mdui.$("body").toggleClass("mdui-drawer-body-left");'
     id="toggle-drawer"
     ><i class="mdui-icon material-icons">menu</i></span
   >
   <a
-    mdui-tooltip="{content: '返回'}"
     class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white mdui-hidden-sm-up"
     onclick="window.history.back()"
   >
@@ -90,7 +88,6 @@
   <!--AdminStart--><a
     href="javascript:;"
     class="mdui-btn mdui-btn-icon mdui-ripple mdui-hidden-sm-up refresh"
-    mdui-tooltip="{content: '刷新缓存'}"
     ><i class="mdui-icon material-icons">refresh</i></a
   >
   <!--AdminEnd-->
@@ -204,7 +201,7 @@
       <div class="mdui-textfield mdui-textfield-floating-label">
         <i class="mdui-icon material-icons">lock</i
         ><label class="mdui-textfield-label">密码</label
-        ><input class="mdui-textfield-input" name="password1" type="new-password" />
+        ><input class="mdui-textfield-input" name="password1" type="password" />
       </div>
     </div>
     <div class="mdui-dialog-actions">
@@ -295,7 +292,7 @@
       </div>
     </li>
     <!--BackArrowStart-->
-    <li class="mdui-list-item mdui-ripple">
+    <li class="mdui-list-item mdui-ripple back">
       <div class="mdui-row mdui-col-sm-12">
         <a href="<!--BackArrowUrl-->">
           <div class="mdui-col-xs-7">
@@ -408,12 +405,12 @@
   src="<!--FileDownUrl-->"
   controls
   autoplay
-  style="width: 100%; margin-top: 10%"
+  style="width: 100%; margin-top: 10%;margin-bottom: 10%;">
 ></audio>
 <!--IsmusicFileEnd-->
 
   <!--IsvideoFileStart-->
-<video class="mdui-video-fluid" controls style="margin-top: 20px">
+<video class="mdui-video-fluid" controls style="margin-top: 20px;margin-bottom: 20px;">
   <source src="<!--FileDownUrl-->" />
   <p>
     Your browser doesn't support HTML5 video. Here is a
@@ -447,7 +444,7 @@
     '<li class="mdui-menu-item"><a href="javascript:void(0);"class="mdui-ripple highlight"><i class="mdui-menu-item-icon mdui-icon material-icons">style</i>markdown解析</a></li>';
   document.querySelector(
     ".mdui-toolbar"
-  ).innerHTML += `<a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple mdui-hidden-sm-up highlight" mdui-tooltip="{content: 'markdown解析'}"><i class="mdui-icon material-icons">style</i></a>`;
+  ).innerHTML += `<a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple mdui-hidden-sm-up highlight"><i class="mdui-icon material-icons">style</i></a>`;
 </script>
 
 <!--IstxtFileEnd-->
@@ -467,7 +464,7 @@
     '<li class="mdui-menu-item"><a href="javascript:void(0);"class="mdui-ripple downloadurl"><i class="mdui-menu-item-icon mdui-icon material-icons">cloud_download</i>下载链接</a></li>';
   document.querySelector(
     ".mdui-toolbar"
-  ).innerHTML += `<a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple mdui-hidden-sm-up downloadurl" mdui-tooltip="{content: '下载链接'}"><i class="mdui-icon material-icons">cloud_download</i></a>`;
+  ).innerHTML += `<a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-ripple mdui-hidden-sm-up downloadurl"><i class="mdui-icon material-icons">cloud_download</i></a>`;
 </script>
 <!--IsFileEnd-->
 

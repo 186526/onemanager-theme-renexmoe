@@ -103,3 +103,11 @@ html *::-webkit-scrollbar {
 html ::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.3);
 }
+
+.mdui-dialog-actions .mdui-btn{
+  border-radius: 4px;
+}
+
+.mdui-menu {
+  border-radius: 6px;
+}

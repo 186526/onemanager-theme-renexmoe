@@ -1,4 +1,4 @@
-import mdui from "mdui";
+import mdui from "../lib/mdui";
 const $ = mdui.$;
 export default () => {
   $.fn.extend({

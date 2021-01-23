@@ -1,6 +1,6 @@
 //import hljs from './highlight.js';
-import marked from 'marked';
-import mdui from 'mdui';
+import marked from '../lib/marked.js';
+import mdui from '../lib/mdui';
 import 'highlight.js/styles/github.css';
 let markdown, isRichText = false;
 const markdownThis = () => {
@@ -33,7 +33,6 @@ const markdownThis = () => {
 };
 const highlight = () => {
     return import('../lib/highlight.js').then(({ default: hljs }) => {
-        window.hljs = hljs;
         if (document.getElementById("code")) {
             console.log(`renexmoe - Markdown - Start EventLister`);
             if (location.pathname.split("/")[location.pathname.split("/").length - 1].split(".")[location.pathname.split("/")[location.pathname.split("/").length - 1].split(".").length - 1] === "md") {
