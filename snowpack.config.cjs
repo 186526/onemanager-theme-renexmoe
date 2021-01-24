@@ -30,11 +30,11 @@ module.exports = {
           config.optimization.splitChunks = {
             chunks: 'async',
             minSize: 30000,
-            maxSize: 250000,
-            minChunks: 3,
+            maxSize: 400000,
+            minChunks: 2,
             maxAsyncRequests: 5,
             maxInitialRequests: 3,
-            automaticNameDelimiter: '~',
+            automaticNameDelimiter: '@',
             name: true,
             cacheGroups: {
               vendors: {

@@ -1,5 +1,5 @@
-/*!
- * renexmoe v1.1.5 (https://github.com/186526/onemanager-theme-renexmoe)
+/*
+ * renexmoe v1.1.6 (https://github.com/186526/onemanager-theme-renexmoe)
  * Copyright 2020-2021 186526 <i@186526.xyz>
  * Licensed under GPL-3.0
  */
