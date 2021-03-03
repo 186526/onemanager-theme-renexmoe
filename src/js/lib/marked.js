@@ -1,2 +1,2 @@
-const marked = require('marked/src/marked.js');
+const marked = require("marked/src/marked.js");
 export default marked;

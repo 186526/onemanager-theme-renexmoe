@@ -9,12 +9,12 @@ const openadminmenu = () => {
   menu.open();
 };
 export default StartListener;
-export async function StopListener(){
+export async function StopListener() {
   document.onmousemove = undefined;
   document.body.oncontextmenu = undefined;
   listenerStatus = false;
 }
-export async function StartListener(){
+export async function StartListener() {
   document.onmousemove = function (e) {
     let $e = event || window.event;
     let $scrollX =
@@ -34,10 +34,10 @@ export async function StartListener(){
   };
   listenerStatus = true;
 }
-export async function ToggleListener(){
-  if(listenerStatus) {
+export async function ToggleListener() {
+  if (listenerStatus) {
     return StopListener();
-  }else{
+  } else {
     return StartListener();
   }
 }

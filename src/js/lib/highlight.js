@@ -1,19 +1,19 @@
 var hljs = require("highlight.js/lib/core");
 
-hljs.registerLanguage(
-  "accesslog",
-  require("highlight.js/lib/languages/accesslog")
-);
-hljs.registerLanguage(
-  "actionscript",
-  require("highlight.js/lib/languages/actionscript")
-);
-hljs.registerLanguage(
-  "angelscript",
-  require("highlight.js/lib/languages/angelscript")
-);
+// hljs.registerLanguage(
+//   "accesslog",
+//   require("highlight.js/lib/languages/accesslog")
+// );
+// hljs.registerLanguage(
+//   "actionscript",
+//   require("highlight.js/lib/languages/actionscript")
+// );
+// hljs.registerLanguage(
+//   "angelscript",
+//   require("highlight.js/lib/languages/angelscript")
+// );
 hljs.registerLanguage("apache", require("highlight.js/lib/languages/apache"));
-hljs.registerLanguage("arcade", require("highlight.js/lib/languages/arcade"));
+// hljs.registerLanguage("arcade", require("highlight.js/lib/languages/arcade"));
 hljs.registerLanguage("arduino", require("highlight.js/lib/languages/arduino"));
 hljs.registerLanguage("armasm", require("highlight.js/lib/languages/armasm"));
 hljs.registerLanguage("xml", require("highlight.js/lib/languages/xml"));
@@ -40,25 +40,25 @@ hljs.registerLanguage("cpp", require("highlight.js/lib/languages/cpp"));
 hljs.registerLanguage("csharp", require("highlight.js/lib/languages/csharp"));
 hljs.registerLanguage("csp", require("highlight.js/lib/languages/csp"));
 hljs.registerLanguage("css", require("highlight.js/lib/languages/css"));
-hljs.registerLanguage("d", require("highlight.js/lib/languages/d"));
+// hljs.registerLanguage("d", require("highlight.js/lib/languages/d"));
 hljs.registerLanguage(
   "markdown",
   require("highlight.js/lib/languages/markdown")
 );
 hljs.registerLanguage("dart", require("highlight.js/lib/languages/dart"));
-hljs.registerLanguage("delphi", require("highlight.js/lib/languages/delphi"));
+// hljs.registerLanguage("delphi", require("highlight.js/lib/languages/delphi"));
 hljs.registerLanguage("diff", require("highlight.js/lib/languages/diff"));
 hljs.registerLanguage("django", require("highlight.js/lib/languages/django"));
-hljs.registerLanguage("dns", require("highlight.js/lib/languages/dns"));
+// hljs.registerLanguage("dns", require("highlight.js/lib/languages/dns"));
 hljs.registerLanguage(
   "dockerfile",
   require("highlight.js/lib/languages/dockerfile")
 );
 hljs.registerLanguage("dos", require("highlight.js/lib/languages/dos"));
-hljs.registerLanguage(
-  "dsconfig",
-  require("highlight.js/lib/languages/dsconfig")
-);
+// hljs.registerLanguage(
+//   "dsconfig",
+//   require("highlight.js/lib/languages/dsconfig")
+// );
 hljs.registerLanguage("dust", require("highlight.js/lib/languages/dust"));
 hljs.registerLanguage("ruby", require("highlight.js/lib/languages/ruby"));
 hljs.registerLanguage("erb", require("highlight.js/lib/languages/erb"));
@@ -73,15 +73,15 @@ hljs.registerLanguage("flix", require("highlight.js/lib/languages/flix"));
 hljs.registerLanguage("fortran", require("highlight.js/lib/languages/fortran"));
 hljs.registerLanguage("fsharp", require("highlight.js/lib/languages/fsharp"));
 hljs.registerLanguage("glsl", require("highlight.js/lib/languages/glsl"));
-hljs.registerLanguage("gml", require("highlight.js/lib/languages/gml"));
+// hljs.registerLanguage("gml", require("highlight.js/lib/languages/gml"));
 hljs.registerLanguage("go", require("highlight.js/lib/languages/go"));
 hljs.registerLanguage("golo", require("highlight.js/lib/languages/golo"));
 hljs.registerLanguage("gradle", require("highlight.js/lib/languages/gradle"));
 hljs.registerLanguage("haml", require("highlight.js/lib/languages/haml"));
-hljs.registerLanguage(
-  "handlebars",
-  require("highlight.js/lib/languages/handlebars")
-);
+// hljs.registerLanguage(
+//   "handlebars",
+//   require("highlight.js/lib/languages/handlebars")
+// );
 hljs.registerLanguage("haskell", require("highlight.js/lib/languages/haskell"));
 hljs.registerLanguage("haxe", require("highlight.js/lib/languages/haxe"));
 hljs.registerLanguage("http", require("highlight.js/lib/languages/http"));
@@ -99,10 +99,10 @@ hljs.registerLanguage(
 );
 hljs.registerLanguage("json", require("highlight.js/lib/languages/json"));
 hljs.registerLanguage("julia", require("highlight.js/lib/languages/julia"));
-hljs.registerLanguage(
-  "julia-repl",
-  require("highlight.js/lib/languages/julia-repl")
-);
+// hljs.registerLanguage(
+//   "julia-repl",
+//   require("highlight.js/lib/languages/julia-repl")
+// );
 hljs.registerLanguage("kotlin", require("highlight.js/lib/languages/kotlin"));
 hljs.registerLanguage("lasso", require("highlight.js/lib/languages/lasso"));
 hljs.registerLanguage("latex", require("highlight.js/lib/languages/latex"));
@@ -201,7 +201,7 @@ hljs.registerLanguage(
   "sql_more",
   require("highlight.js/lib/languages/sql_more")
 );
-hljs.registerLanguage("sql", require("highlight.js/lib/languages/sql"));
+// hljs.registerLanguage("sql", require("highlight.js/lib/languages/sql"));
 hljs.registerLanguage("stylus", require("highlight.js/lib/languages/stylus"));
 hljs.registerLanguage("subunit", require("highlight.js/lib/languages/subunit"));
 hljs.registerLanguage("swift", require("highlight.js/lib/languages/swift"));

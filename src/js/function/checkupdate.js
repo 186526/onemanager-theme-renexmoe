@@ -16,7 +16,7 @@ export async function click() {
   mdui.mutation();
   const answer = await check();
   o.close();
-  try{
+  try {
     new mdui.alert(
       `
           <div class="mdui-typo">
@@ -36,8 +36,11 @@ export async function click() {
           </div>
           `,
       `当前版本是 ${json.version}-${MODE}-${json.builder},${answer.status}`
-    );  
-  }catch(e){
-    new mdui.alert(`<div class="mdui-typo">Error: ${e}</div>`,'检查更新遇到未知错误');
+    );
+  } catch (e) {
+    new mdui.alert(
+      `<div class="mdui-typo">Error: ${e}</div>`,
+      "检查更新遇到未知错误"
+    );
   }
 }

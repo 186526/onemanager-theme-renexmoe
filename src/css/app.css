@@ -71,12 +71,16 @@ footer a {
 }
 
 .mdui-list-item-icon {
-  --iconcolor:#656565;
+  --iconcolor: #656565;
   color: var(--iconcolor) !important;
 }
 
 .mdui-theme-layout-dark .mdui-list-item-icon {
   --iconcolor: #dadada !important;
+}
+
+.mdui-theme-layout-dark .mdui-list-item-active{
+  --color-active: rgb(255, 255, 255) !important;
 }
 
 .mdui-typo {
@@ -114,7 +118,7 @@ html ::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.mdui-dialog-actions .mdui-btn{
+.mdui-dialog-actions .mdui-btn {
   border-radius: 4px;
 }
 

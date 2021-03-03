@@ -1,4 +1,4 @@
-import GetLink from './method/getlink';
+import GetLink from "./method/getlink";
 class file {
   constructor(file) {
     this.orginfile = file;
@@ -25,7 +25,7 @@ class file {
   }
   async GetUploadURL() {
     const answer = await GetLink(this.file);
-    if(answer.status){
+    if (answer.status) {
       this.file.url = answer.result;
     }
     return answer;

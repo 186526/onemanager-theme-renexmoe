@@ -4,6 +4,7 @@
   "description": "A Material Design Theme For Onemanager-php",
   "main": "src/js/app.js",
   "scripts": {
+    "analyze": "source-map-explorer build/js/*.js",
     "format": "prettier --write \"*[^build]/**/*[^prod][^bundle].@(css|js|html|json)\"",
     "clean": "rm -rf ./dist/ ./build/ ./src/html",
     "dev": "npm run clean;gulp html;snowpack dev",
@@ -25,7 +26,8 @@
     "marked": "^1.2.7",
     "mdui": "^1.0.1",
     "nprogress": "^0.2.0",
-    "pjax": "^0.2.8"
+    "pjax": "^0.2.8",
+    "source-map-explorer": "^2.5.2"
   },
   "devDependencies": {
     "@snowpack/plugin-optimize": "^0.2.13",
@@ -36,6 +38,12 @@
     "prettier": "^2.2.1",
     "snowpack": "^3.0.11"
   },
-  "homepage": "https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.1.6",
-  "sideEffects": false
+  "homepage": "https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.2",
+  "sideEffects": false,
+  "browserslist": [
+    ">0.5%",
+    "not ie 11",
+    "not op_mini all",
+    "not dead"
+  ]
 }

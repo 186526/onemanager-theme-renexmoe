@@ -1,2 +1,2 @@
-import pjax from './PJAX/index.js';
+import pjax from "./PJAX/index.js";
 export default pjax;

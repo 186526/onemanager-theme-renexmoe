@@ -9,11 +9,11 @@ index = index.replace(
 );
 index = index.replace(
   '<script type="module" src="/renexmoe_assets/js/app.js"></script>',
-  ((assets)=>{
+  ((assets) => {
     let a = "";
-    for(let b in assets){
-      if(b.split(".")[b.split(".").length-1]==="js"){
-        a+=`<script src="${pkg.homepage+assets[b]}"></script>`;
+    for (let b in assets) {
+      if (b.split(".")[b.split(".").length - 1] === "js") {
+        a += `<script src="${pkg.homepage + assets[b]}"></script>`;
       }
     }
     return a;

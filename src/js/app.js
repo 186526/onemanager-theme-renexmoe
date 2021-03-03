@@ -1,5 +1,5 @@
 /*
- * renexmoe v1.1.6 (https://github.com/186526/onemanager-theme-renexmoe)
+ * renexmoe v1.2 (https://github.com/186526/onemanager-theme-renexmoe)
  * Copyright 2020-2021 186526 <i@186526.xyz>
  * Licensed under GPL-3.0
  */
@@ -16,8 +16,8 @@ import menu from "./function/menu.js";
 import marked from "./function/marked.js";
 import flyingPages from "./lib/flyingpages.js";
 import highlight from "./function/code.js";
-import pack from './pack.js';
-import ActiveDisk from './function/activedisk';
+import pack from "./pack.js";
+import ActiveDisk from "./function/activedisk";
 globalThis.mdui = mdui;
 globalThis.renexmoe = {
   toggle_theme: theme.toggle,
@@ -38,11 +38,14 @@ globalThis.renexmoe = {
     flyingPages();
   },
   pjax: pjax(),
-  renexmoe:pack,
-  version:pack,
+  renexmoe: pack,
+  version: pack,
 };
 mdui.$(() => {
-  console.log("\n %c OneManager-theme-renexmoe | Powered by OneManager-php && Webpack | 186526 \n", "color: #fff; background: #444; padding:5px 0;");
+  console.log(
+    "\n %c OneManager-theme-renexmoe | Powered by OneManager-php && Webpack | 186526 \n",
+    "color: #fff; background: #444; padding:5px 0;"
+  );
   console.log(`renexmoe::init::Start Load`);
   console.log(`renexmoe::init::Start EventLister`);
   menu();

@@ -28,13 +28,13 @@ module.exports = {
         extendConfig: (config) => {
           config.optimization.usedExports = true;
           config.optimization.splitChunks = {
-            chunks: 'async',
-            minSize: 30000,
-            maxSize: 400000,
+            chunks: "async",
+            minSize: 100000,
+            maxSize: 300000,
             minChunks: 2,
             maxAsyncRequests: 5,
             maxInitialRequests: 3,
-            automaticNameDelimiter: '@',
+            automaticNameDelimiter: "@",
             name: true,
             cacheGroups: {
               vendors: {
@@ -44,9 +44,9 @@ module.exports = {
               default: {
                 minChunks: 2,
                 priority: -20,
-                reuseExistingChunk: true
-              }
-            }
+                reuseExistingChunk: true,
+              },
+            },
           };
           return config;
         },
