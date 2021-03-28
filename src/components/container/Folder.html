@@ -1,9 +1,6 @@
 <!--IsFolderStart-->
 @@include("./Folder/head.html")
-<div
-  class="mdui-row mdui-shadow-3"
-  style="padding: 5px; margin: 20px 0; border-radius: 8px"
->
+<div class="mdui-row mdui-shadow-3" style="margin: 20px 0; border-radius: 8px">
   <ul class="mdui-list" id="file-list">
     <li class="mdui-list-item mdui-ripple">
       <div class="mdui-row mdui-col-xs-12">
@@ -54,4 +51,6 @@
   document.querySelector("#admin-menu").innerHTML +=
     '<li class="mdui-menu-item"><a href="javascript:void(0);"class="mdui-ripple getalllink"><i class="mdui-menu-item-icon mdui-icon material-icons">link</i>批量链接</a></li>';
 </script>
+@@include('./Folder/MorePage.html')
+
 <!--IsFolderEnd-->

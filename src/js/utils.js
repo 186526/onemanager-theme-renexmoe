@@ -1,5 +1,6 @@
 import mdui from "./lib/mdui.js";
 import cookies from "./lib/cookies";
+import sha1 from "sha-1/dist/sha1.esm.js";
 export default {
   /**
    *
@@ -61,6 +62,33 @@ export async function logout() {
  *
  */
 export async function Login(password) {
+  let timestamp = String(new Date().getTime());
+  timestamp = timestamp.substring(0, timestamp.length - 3);
+  const password1 = sha1(String(timestamp) + String(password)),
+    answer = await fetch("?admin", {
+      method: "POST",
+      credentials: "same-origin",
+      cache: "no-cache",
+      headers: {
+        "content-type": "application/x-www-form-urlencoded",
+      },
+      body: new Form({
+        password1: password1,
+        timestamp: timestamp,
+      }).String,
+    })
+      .then((e) => e)
+      .catch((e) => e);
+  if (answer.status === 201) {
+    return { status: true, msg: "Login Successful" };
+  } else if (answer.status === 401) {
+    return await LoginFallback(password);
+  } else {
+    return await LoginFallback(password);
+  }
+}
+
+async function LoginFallback(password) {
   const answer = await fetch("?admin", {
     method: "POST",
     credentials: "same-origin",
@@ -127,7 +155,7 @@ export class Form {
    *
    */
   append(obj) {
-    KV = Object.assign(obj, this.KV);
+    const KV = Object.assign(obj, this.KV);
     this.KV = KV;
     this.init();
     return this.KV;
@@ -176,7 +204,7 @@ async function ListDisk() {
  *  @return {Object} - return a Object
  *
  */
-export async function GetDisk(URL = globalThis.location.pathname) {
+export async function GetDisk(URL = window.location.pathname) {
   let answer = {
     diskList: await ListDisk(),
   };
@@ -207,4 +235,42 @@ export function GetAllLinks(DOM) {
     (e) => (a += `${e}\n`)
   );
   return a;
+}
+
+function isFolder(DOM) {
+  return {
+    status: DOM.querySelector("#file-list") != null,
+  };
+}
+
+function isFile(DOM) {
+  let isFile = DOM.querySelector("#file") != null,
+    answer = {};
+  if (isFile) {
+    answer.status = true;
+    const File = DOM.querySelector("#file");
+    let isRichText = File.querySelector("#code") != null,
+      isImg = File.querySelector("img[class~=mdui-img-fluid]") != null,
+      isMusic = File.querySelector("audio") != null,
+      isPDF = File.querySelector("embed") != null,
+      isOffice = File.querySelector("iframe") != null,
+      isVideo = File.querySelector("video") != null;
+    answer.type = isImg
+      ? "image"
+      : isMusic
+      ? "audio"
+      : isPDF
+      ? "PDF"
+      : isOffice
+      ? "office"
+      : isVideo
+      ? "video"
+      : isRichText
+      ? "text"
+      : "other";
+    return answer;
+  } else {
+    answer.status = false;
+    return answer;
+  }
 }

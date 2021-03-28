@@ -1,8 +1,9 @@
-import mdui from "../lib/mdui";
+import mdui from "../lib/mdui.js";
 import { refresh, logout, Login, GetAllLinks} from "../utils";
 import { click } from "./checkupdate";
 import { ToggleListener } from "./menu.js";
 import GetLangStr from "../Lang/index.js";
+import pack from "../pack.js";
 const $ = mdui.$;
 export default () => {
   $("#toggle-drawer").on("click", () => {
@@ -38,7 +39,7 @@ export default () => {
   });
   $(".back-page").each((a, b) => {
     b.addEventListener("click", () => {
-      globalThis.renexmoe.pjax.loadUrl("../");
+      window.renexmoe.pjax.loadUrl("../");
     });
   });
   $(".refresh").each((a, b) => {
@@ -114,7 +115,7 @@ export default () => {
 const drawertoggle = () => {
   $("#about_theme").on("click", () => {
     new mdui.alert(
-      '<div class="mdui-typo"><a href="https://github.com/186526/onemanager-theme-renexmoe">Onemanager-theme-renexmoe</a><br>Open source under GPL-3.0 License<br>Build with Love & MDUI & Gulp & snowpack | webpack<br>Author:<a href="https://186526.xyz">186526</a></div>',
+      `<div class="mdui-typo"><a href="https://github.com/186526/onemanager-theme-renexmoe">Onemanager-theme-renexmoe ${pack.version}</a><br>Open source under GPL-3.0 License<br>Build with Love & MDUI & Gulp & snowpack | webpack<br>Author:<a href="https://186526.xyz">186526</a></div>`,
       "关于renexmoe"
     );
     mdui.mutation();

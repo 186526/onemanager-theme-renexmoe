@@ -1,6 +1,6 @@
 import marked from "../lib/marked.js";
 //import $ from 'mdui.jq';
-import mdui from "../lib/mdui";
+import mdui from "../lib/mdui.js";
 const $ = mdui.$;
 export default async () => {
   return import("../lib/highlight.js").then(({ default: hljs }) => {

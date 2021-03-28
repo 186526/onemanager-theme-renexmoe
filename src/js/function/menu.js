@@ -1,5 +1,5 @@
-import mdui from "../lib/mdui";
-globalThis.listenerStatus = false;
+import mdui from "../lib/mdui.js";
+window.listenerStatus = false;
 const openadminmenu = () => {
   let menu = new mdui.Menu("#mouseplace", "#admin-menu");
   let menudom = document.getElementById("admin-menu");
@@ -41,4 +41,4 @@ export async function ToggleListener() {
     return StartListener();
   }
 }
-globalThis.ToggleListener = ToggleListener;
+window.ToggleListener = ToggleListener;

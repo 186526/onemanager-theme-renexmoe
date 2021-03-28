@@ -167,7 +167,7 @@ Pjax.prototype = {
 
   abortRequest: require("pjax/lib/abort-request"),
 
-  doRequest: require("./send-req.js"),
+  doRequest: require("./send-req.js").default,
 
   handleResponse: require("pjax/lib/proto/handle-response"),
 
@@ -299,3 +299,4 @@ Pjax.prototype = {
 Pjax.isSupported = require("pjax/lib/is-supported");
 
 export default Pjax;
+//module.exports = Pjax;

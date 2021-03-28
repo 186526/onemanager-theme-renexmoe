@@ -1,6 +1,6 @@
 {
   "name": "onemanager-theme-renexmoe",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "description": "A Material Design Theme For Onemanager-php",
   "main": "src/js/app.js",
   "scripts": {
@@ -23,27 +23,33 @@
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "highlight.js": "^10.5.0",
-    "marked": "^1.2.7",
+    "marked": "^2.0.1",
     "mdui": "^1.0.1",
     "nprogress": "^0.2.0",
     "pjax": "^0.2.8",
-    "source-map-explorer": "^2.5.2"
+    "sha-1": "^1.0.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.13.8",
     "@snowpack/plugin-optimize": "^0.2.13",
     "@snowpack/plugin-webpack": "^2.3.0",
     "cheerio": "^1.0.0-rc.5",
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.3.0",
     "prettier": "^2.2.1",
-    "snowpack": "^3.0.11"
+    "snowpack": "^3.0.11",
+    "source-map-explorer": "^2.5.2"
   },
-  "homepage": "https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.2",
+  "homepage": "https://cdn.jsdelivr.net/gh/186526/renexmoe-cdn@v1.3",
   "sideEffects": false,
   "browserslist": [
-    ">0.5%",
+    "Chrome 40",
     "not ie 11",
     "not op_mini all",
     "not dead"
-  ]
+  ],
+  "babel": {
+    "sourceType": "unambiguous",
+    "plugins": ["@babel/plugin-transform-modules-commonjs"]
+  }
 }

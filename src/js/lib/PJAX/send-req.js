@@ -1,6 +1,6 @@
 var updateQueryString = require("pjax/lib/util/update-query-string");
 
-module.exports = function (location, options, callback) {
+export default function (location, options, callback) {
   options = options || {};
   var queryString;
   var requestOptions = options.requestOptions || {};
@@ -83,4 +83,4 @@ module.exports = function (location, options, callback) {
   request.send(requestPayload);
 
   return request;
-};
+}

@@ -1,6 +1,6 @@
 import hljs from "../lib/highlight.js";
 import marked from "../lib/marked.js";
-import mdui from "../lib/mdui";
+import mdui from "../lib/mdui.js";
 import "highlight.js/styles/github.css";
 let markdown,
   isRichText = false;
